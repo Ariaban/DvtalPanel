@@ -1,0 +1,401 @@
+/* UI/UX: RohanIT.ir */
+/* طراحی رابط و تجربه کاربری فن آوری اطلاعات روهان */
+@charset "utf-8";
+@import "base";
+@import "compass/css3";
+
+$fontApp : $fontMirza;
+
+$bkUrlTVCPreview : '';
+body.tvcPre:before {
+	width: 100%;
+    height: 100%;
+	content: "";
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	display: block;
+
+    background-color: #000000;
+	background-image: url($bkUrlTVCPreview);
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+
+	-webkit-filter: blur(0px) grayscale(0%);
+	-moz-filter: blur(0px) grayscale(0%);
+	-o-filter: blur(0px) grayscale(0%);
+	-ms-filter: blur(0px) grayscale(0%);
+	filter: blur(0px) grayscale(0%);
+
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+	filter: alpha(opacity=0);
+	-moz-opacity: 0;
+	-khtml-opacity: 0;
+	opacity: 0;
+	z-index: -1;
+    margin: 0;
+	padding: 0;
+    overflow: hidden;
+}
+body.tvcPre {
+	width: 1920px !important;
+    min-width: 1920px !important;
+    max-width: 1920px !important;
+    height: 1080px !important;
+    min-height: 1080px !important;
+    max-height: 1080px !important;
+    background-color: #000000;
+	color: $colorWhite1;
+	font: 0.625em/1em $fontApp;
+	font-weight: normal;
+	line-height: 1.75 !important;
+	letter-spacing: 0;
+	margin: 0;
+	padding: 0;
+    overflow: hidden;
+}
+
+a {
+    background-color: $color1;
+    color: $color1Bk;
+    text-decoration: none;
+    padding: 0px 4px;
+    @include transition(all 0.15s ease);
+    &:hover {
+        background-color: $color1Bk;
+        color: $color1;
+        cursor: pointer;
+    }
+}
+a[disabled] {
+    pointer-events: none;
+}
+
+a {
+	background-color: $color1;
+	color: lighten($color1, 45);
+	text-decoration: none;
+	@include transition(all 0.15s ease);
+	&:hover {
+		background-color: $color2;
+		color: lighten($color2, 45);
+		cursor: pointer;
+	}
+}
+
+.widgetTimeDate {
+    display: block;
+    width: 100%;
+    min-width: 100%;
+    max-width: 100%;
+    height: 100%;
+    min-height: 100%;
+    max-height: 100%;
+    text-align: center;
+    
+    background-image: url(../images/borderStyleDate.png);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    
+    margin: 0px;
+    padding: 0px;
+    
+    .txtTime {
+        height: 170px;
+        min-height: 170px;
+        color: #FFFFFF;
+        font: $fontSize*9.2 $fontRoya;
+        font-weight: 600;
+        margin: 0px;
+        padding: 0px;
+        padding-top: 85px;
+    }
+    .txtDate {
+        color: #FFFFFF;
+        font: $fontSize*2.9 $fontRoya;
+        font-weight: 600;
+        margin: 0px;
+        padding: 0px;
+        padding-top: 5px;
+    }
+}
+
+.weather {
+    display: block;
+    position: relative;
+//    background-color: #1C1B1B;
+    width: 320px;
+    min-width: 320px;
+    max-width: 320px;
+    height: 300px;
+    min-height: 300px;
+    max-height: 300px;
+    line-height: 188px;
+    vertical-align: middle;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 0px auto;
+    padding: 0px;
+    padding-top: 6px;
+    overflow: hidden;
+}
+i {
+    color: #FFFFFF;
+    font-family: weather;
+    font-weight: normal;
+    font-style: normal;
+    line-height: 1.0;
+    text-transform: none;
+}
+.weather .wi {
+    color: #FFFFFF;
+    height: 140px;
+    min-height: 140px;
+    max-height: 140px;
+    line-height: 140px;
+    font-family: weather;
+    font-size: 186px;
+    font-weight: 600;
+    text-align: center;
+//    text-shadow: 0px 1px 3px rgba(255, 255, 255, 0.45);
+    margin: 0px;
+    padding: 0px;
+    padding-top: 25px;
+}
+.weather .cw {
+    color: #FFFFFF;
+    height: 120px;
+    min-height: 120px;
+    max-height: 120px;
+    line-height: 120px;
+    font: $fontSize*9.6 $fontRoya;
+    font-weight: 600;
+    text-align: center;
+//    text-shadow: 0px 1px 3px rgba(255, 255, 255, 0.45);
+    margin: 0px;
+    padding: 0px;
+    padding-top: 25px;
+}
+.weather .cc {
+    height: 120px;
+    min-height: 120px;
+    max-height: 120px;
+    line-height: 120px;
+    font: $fontSize*3.2 $fontDefault;
+    color: rgba(255, 255, 255, 0.55);
+    text-align: center;
+//    text-shadow: 0px 1px 3px rgba(255, 255, 255, 0.15);
+    margin: 0px 0 0 15px;;
+    padding: 0px;
+}
+.weather ul {
+    margin: 0;
+    padding: 0;
+}
+.weather li {
+    color: #FFFFFF;
+    background: rgba(255,255,255,0.15);
+    padding: 4px;
+    display: inline-block;
+    border-radius: 4px;
+}
+.weather .currently {
+    margin: 0 4px;
+}
+.widgetWeather {
+    display: block;
+    width: 100%;
+    min-width: 100%;
+    max-width: 100%;
+    height: 100%;
+    min-height: 100%;
+    max-height: 100%;
+    text-align: center;
+    
+    background-image: url(../images/borderStyleWeather.png);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    
+    margin: 0px;
+    padding: 0px;
+}
+
+.widgetSlider {
+    display: block;
+    width: 100%;
+    min-width: 100%;
+    max-width: 100%;
+    height: 100%;
+    min-height: 100%;
+    max-height: 100%;
+    text-align: center;
+    
+    background-image: url();
+    background-position: center center;
+    background-repeat: no-repeat;
+    
+    margin: 0px;
+    padding: 0px;
+    
+    .coin-slider {
+        width: 100%;
+        min-width: 100%;
+        max-width: 100%;
+        height: 100%;
+        min-height: 100%;
+        max-height: 100%;
+        margin: 0px;
+        padding: 0px;
+    }
+    
+    > img {
+        display: block;
+        width: 100%;
+        min-width: 100%;
+        max-width: 100%;
+        height: 100%;
+        min-height: 100%;
+        max-height: 100%;
+        margin: 0px;
+        padding: 0px;
+        overflow: hidden;
+    }
+}
+
+.widgetVideo {
+    > video {
+        width: 100%;
+        min-width: 100%;
+        height: 100%;
+        min-height: 100%;
+        margin: 0px;
+        padding: 0px;
+    }
+}
+
+.widgetText {
+    position: relative;
+    width: 100%;
+    min-width: 100%;
+    max-width: 100%;
+	height: 100%;
+    min-height: 100%;
+    max-height: 100%;
+    background-color: transparent;
+    color: #FFFFFF;
+    font: $fontSize*1 $fontApp;
+
+    margin: 0px;
+    padding: 0px;
+    overflow: hidden;
+}
+
+
+
+
+
+
+
+
+
+ul.marquee {
+	/* required styles */
+	display: block;
+	padding: 0;
+	margin: 0;
+	list-style: none;
+	line-height: 1;
+	position: relative;
+	overflow: hidden;
+
+	/* optional styles for appearance */
+	width: 1620px;
+	height: 120px; /* height should be included to reserve visual space for the marquee */
+    
+    text-align: center;
+
+	background-color: transparent;
+    
+    margin: 0px auto;
+}
+
+ul.marquee li {
+	/* required styles */
+	position: absolute;
+	top: -999em;
+    right: 0;
+	display: block;
+	white-space: nowrap; /* keep all text on a single line */
+
+	/* optional styles for appearance */
+	font: $fontSize*1 $fontApp;
+    text-align: center;
+    
+	margin: 0px;
+    padding: 0px;
+}
+
+
+
+
+
+
+
+
+
+
+.marqueeTxt {
+	height: 120px;
+	color: $colorGrayDark;
+	overflow: hidden;
+	margin: 0;
+	ul {
+		display: block;
+		position: relative;
+		list-style: none;
+		font: 1em/1em $fontApp;
+	}
+	li {
+		height: 120px;
+		line-height: 120px;
+		vertical-align: middle;
+		overflow: hidden;
+		&:nth-child(odd) {
+            background-color: #F7F7F7;
+            @include transition(all 0.01s ease-in);
+        }
+        &:nth-child(even) {
+            background-color: #FFF;
+            @include transition(all 0.01s ease-in);
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

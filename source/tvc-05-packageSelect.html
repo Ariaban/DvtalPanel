@@ -1,0 +1,380 @@
+<!doctype html>
+<html lang="fa">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>سامانه مدیریت و پخش دی وی تال</title>
+    
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link href="logo.png" rel="icon" type="image/png">
+
+    <link href="css/uicon.css" rel="stylesheet" type="text/css">
+    <link href="css/screen.css" media="screen, projection" rel="stylesheet" type="text/css" />
+    <link href="css/print.css" media="print" rel="stylesheet" type="text/css" />
+    <!--[if lt IE 8]>
+      <link href="css/ie.css" media="screen, projection" rel="stylesheet" type="text/css" />
+    <![endif]-->
+    <!-- <script src="../bower_components/jquery/dist/jquery.js"></script> -->
+    <script src="js/jquery.js"></script>
+    <!-- <script src="../bower_components/modernizr/src/Modernizr.js"></script> -->
+    <script src="js/modernizr.custom.63321.js"></script>
+    <!-- <script src="js/jquery.js"></script> -->
+    
+</head>
+<body class="tvc">
+
+<notify> <!-- notify place show -->
+</notify> <!-- /notify place show -->
+ 
+<notify-fix> <!-- notify-fix place show -->
+</notify-fix> <!-- /notify-fix place show -->
+
+<div class="limit">
+    <div class="row block">
+
+        <div class="col12 blockHeader">
+
+            <div class="row headerBK">
+                <div class="col4">
+                </div>
+                <div class="col4 headerLogoPlace">
+                    <img class="logoDivital" src="images/logo-divital.svg" alt="DIVITAL Control Panel">
+                </div>
+                <div class="col4">
+                </div>
+            </div>
+
+        </div>
+        
+    </div>
+</div>
+        
+<div class="limit">
+	<div class="row block">
+        
+    	<div class="col12 blockHeaderType">
+            
+            <div class="blockHeaderPlace">
+                <div class="blockHeaderTitle">
+                    <div class="row itemSpace">
+                        <div class="col2">
+                        </div>
+                        <div class="col2">
+                            <a href="tvc-02-package.html" class="btnMenuMode">
+                                <span class="icon" data-icon="1"></span>
+                                <span class="txt">بسته ها و محتوا</span>
+                            </a>
+                        </div>
+                        <div class="col2">
+                        <a href="tvc-07-template.html" class="btnMenuMode select">
+                            <span class="icon" data-icon="&#xe29c;"></span>
+                            <span class="txt">قالب ها و ویرایش</span>
+                        </a>
+                        </div>
+                        <div class="col2">
+                        <a href="#" class="btnMenuMode">
+                            <span class="icon" data-icon="&#xe1f7;"></span>
+                            <span class="txt">سیستم های نمایش</span>
+                        </a>
+                        </div>
+                        <div class="col2">
+                            <input class="inputSearch" type="search" placeholder="جســــتجو">
+                        </div>
+                        <div class="blockHeaderBtnLogout">
+                            <a href="tvc-01-login.html" class="btnMenuModeSmallLogout">
+                                <span class="icon" data-icon="&#xe265;"></span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+        
+    </div>
+</div>
+    
+<div class="limit">
+	<div class="row block">
+        
+    	<div class="col12 blockContentType">
+            
+            <div class="blockContentPlace">
+                
+            <script>
+                function allowDrop(ev) {
+                    ev.preventDefault();
+                }
+
+                function drag(ev) {
+                    ev.dataTransfer.setData("text", ev.target.id);
+                }
+
+                function drop(ev) {
+                    ev.preventDefault();
+                    var data = ev.dataTransfer.getData("text");
+                    ev.target.appendChild(document.getElementById(data));
+                }
+            </script>
+
+
+<div class="editPackagePage">
+    <div class="editPackageContent">
+        
+        <div class="row rowSelectHeader">
+                <div class="col6 editPackageBtnPlace">
+                    <div class="col4">
+                        <a href="tvc-04-packageAdd.html" class="btnMenuMode">
+                            <span class="icon" data-icon="&#xe04d;"></span>
+                            <span class="txt">بازگشت</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        
+        <div class="rowSelectDefault">
+            
+            <div class="rowSelectHeader">
+                <div class="editPackageTitle">1.
+                    لیست تمامی بسته های ساخته شده جهت انتخاب
+                </div>
+            </div>
+
+            <div class="rowSelectA">
+                <div id="itemList" class="rowSelectContent" ondrop="drop(event)" ondragover="allowDrop(event)" >
+
+                    <div id="item01" class="packageItem drag" draggable="true" ondragstart="drag(event)" >
+                        <div class="packageItemPreview">
+                            <img src="../source/slide/food01.jpg">
+                            <img src="../source/slide/food02.jpg">
+                            <img src="../source/slide/food03.jpg">
+                        </div>
+                        <div class="packageItemDivider">
+
+                            <div class="row">
+                                <a class="packageItemBtnAdd"><span class="icon" data-icon="&#xe05b;"></span></a>
+                            </div>
+
+                            <div class="row">
+                                <div class="packageItemTitle">
+                                   <span class="icon" data-icon="&#xe256;"></span>&nbsp;
+                                    نام بسته
+                                </div>
+                                <div class="packageItemTime">
+                                   <span class="icon" data-icon="&#xe019;"></span>&nbsp;
+                                    ۱۵ از ۲۰ دقیقه
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div id="item03" class="packageItem drag" draggable="true" ondragstart="drag(event)" >
+                        <div class="packageItemPreview">
+                            <img src="../source/slide/food01.jpg">
+                            <img src="../source/slide/food02.jpg">
+                            <img src="../source/slide/food03.jpg">
+                        </div>
+                        <div class="packageItemDivider">
+
+                            <div class="row">
+                                <a class="packageItemBtnAdd"><span class="icon" data-icon="&#xe05b;"></span></a>
+                            </div>
+
+                            <div class="row">
+                                <div class="packageItemTitle">
+                                   <span class="icon" data-icon="&#xe256;"></span>&nbsp;
+                                    نام بسته
+                                </div>
+                                <div class="packageItemTime">
+                                   <span class="icon" data-icon="&#xe019;"></span>&nbsp;
+                                    ۱۵ از ۲۰ دقیقه
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div id="item04" class="packageItem drag" draggable="true" ondragstart="drag(event)" >
+                        <div class="packageItemPreview">
+                            <img src="../source/slide/food01.jpg">
+                            <img src="../source/slide/food02.jpg">
+                            <img src="../source/slide/food03.jpg">
+                        </div>
+                        <div class="packageItemDivider">
+
+                            <div class="row">
+                                <a class="packageItemBtnAdd"><span class="icon" data-icon="&#xe05b;"></span></a>
+                            </div>
+
+                            <div class="row">
+                                <div class="packageItemTitle">
+                                   <span class="icon" data-icon="&#xe256;"></span>&nbsp;
+                                    نام بسته
+                                </div>
+                                <div class="packageItemTime">
+                                   <span class="icon" data-icon="&#xe019;"></span>&nbsp;
+                                    ۱۵ از ۲۰ دقیقه
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div id="item05" class="packageItem drag" draggable="true" ondragstart="drag(event)" >
+                        <div class="packageItemPreview">
+                            <img src="../source/slide/food01.jpg">
+                            <img src="../source/slide/food02.jpg">
+                            <img src="../source/slide/food03.jpg">
+                        </div>
+                        <div class="packageItemDivider">
+
+                            <div class="row">
+                                <a class="packageItemBtnAdd"><span class="icon" data-icon="&#xe05b;"></span></a>
+                            </div>
+
+                            <div class="row">
+                                <div class="packageItemTitle">
+                                   <span class="icon" data-icon="&#xe256;"></span>&nbsp;
+                                    نام بسته
+                                </div>
+                                <div class="packageItemTime">
+                                   <span class="icon" data-icon="&#xe019;"></span>&nbsp;
+                                    ۱۵ از ۲۰ دقیقه
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div id="item06" class="packageItem drag" draggable="true" ondragstart="drag(event)" >
+                        <div class="packageItemPreview">
+                            <img src="../source/slide/food01.jpg">
+                            <img src="../source/slide/food02.jpg">
+                            <img src="../source/slide/food03.jpg">
+                        </div>
+                        <div class="packageItemDivider">
+
+                            <div class="row">
+                                <a class="packageItemBtnAdd"><span class="icon" data-icon="&#xe05b;"></span></a>
+                            </div>
+
+                            <div class="row">
+                                <div class="packageItemTitle">
+                                   <span class="icon" data-icon="&#xe256;"></span>&nbsp;
+                                    نام بسته
+                                </div>
+                                <div class="packageItemTime">
+                                   <span class="icon" data-icon="&#xe019;"></span>&nbsp;
+                                    ۱۵ از ۲۰ دقیقه
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+        
+        <div class="rowSelectDefault">
+            
+            <div class="rowSelectHeader">
+                <div class="editPackageTitle">2.
+                    بسته های انتخاب شده جهت پخش
+                </div>
+            </div>
+
+            <div class="rowSelectB">
+            <div id="itemSelect" class="rowSelectContent" ondrop="drop(event)" ondragover="allowDrop(event)" >
+
+                <div id="item02" class="packageItem" draggable="true" ondragstart="drag(event)" >
+                    <div class="packageItemPreview">
+                        <img src="../source/slide/food01.jpg">
+                        <img src="../source/slide/food02.jpg">
+                        <img src="../source/slide/food03.jpg">
+                        <img src="../source/slide/food01.jpg">
+                        <img src="../source/slide/food02.jpg">
+                        <img src="../source/slide/food03.jpg">
+                        <img src="../source/slide/food01.jpg">
+                        <img src="../source/slide/food02.jpg">
+                        <img src="../source/slide/food03.jpg">
+                        <img src="../source/slide/food01.jpg">
+                        <img src="../source/slide/food02.jpg">
+                        <img src="../source/slide/food03.jpg">
+                    </div>
+                    <div class="packageItemDivider">
+                        
+                        <div class="row">
+<!--                            <a class="btnToggleTime packageItemBtnSetting"><span class="icon" data-icon="&#xe019;"></span></a>-->
+                            <a class="packageItemBtnDelete"><span class="icon" data-icon="&#xe0da;"></span></a>
+                        </div>
+                        
+                        <div class="row">
+                            <div class="packageItemTitle">
+                               <span class="icon" data-icon="&#xe256;"></span>&nbsp;
+                                نام بسته
+                            </div>
+                            <div class="packageItemTime">
+                               <span class="icon" data-icon="&#xe019;"></span>&nbsp;
+                                ۱۵ از ۲۰ دقیقه
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+
+            </div>
+        </div>
+            
+        </div>
+        
+        <div class="rowSelectDefault">
+            <div class="row">
+                <div class="editPackageTitle">3.
+                    تنظیم مدت زمان نمایش
+                </div>
+
+                <div class="editPackageDesc">
+                    <input class="inputTxt" type="text" placeholder="زمان بر حسب دقیقه">
+                </div>
+            </div>
+        </div>
+        
+        <div class="row rowSelectHeader">
+            <div class="col4">
+            </div>
+            <div class="col4">
+                <div class="col6">
+                    <a class="btnPageOk">
+                        <span class="icon" data-icon="&#xe042;"></span>
+                        <span class="txt">تایید و ذخیره</span>
+                    </a>
+                </div>
+                <div class="col6">
+                    <a class="btnPageNOk">
+                        <span class="icon" data-icon="&#xe036;"></span>
+                        <span class="txt">انصراف</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</div>
+  
+            </div>
+            
+        </div>
+        
+    </div>
+</div>
+
+<div class="limit">
+    <div class="row block">
+        <div class="col12 blockLFooterType">
+            تمامی حقوق محفوظ میباشد و متعلق به دی وی تال است.
+        </div>
+    </div>
+</div>        
+
+</body>
+</html>

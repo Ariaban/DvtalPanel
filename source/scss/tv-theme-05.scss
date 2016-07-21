@@ -1,0 +1,396 @@
+/* UI/UX: RohanIT.ir */
+/* طراحی رابط و تجربه کاربری فن آوری اطلاعات روهان */
+@charset "utf-8";
+@import "tv";
+
+$fontApp : $fontMirza;
+
+$bkUrlTVCPreview : '../images/fullHDver02.jpg';
+$bkUrlTVCPreviewOver : '../images/fullHDver02over.png';
+body.tvcPre:before {
+	width: 100%;
+    height: 100%;
+	content: "";
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	display: block;
+
+    background-color: #000000;
+	background-image: url();
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+
+	-webkit-filter: blur(0px) grayscale(0%);
+	-moz-filter: blur(0px) grayscale(0%);
+	-o-filter: blur(0px) grayscale(0%);
+	-ms-filter: blur(0px) grayscale(0%);
+	filter: blur(0px) grayscale(0%);
+
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+	filter: alpha(opacity=100);
+	-moz-opacity: 1;
+	-khtml-opacity: 1;
+	opacity: 1;
+	z-index: -1;
+    margin: 0;
+	padding: 0;
+    overflow: hidden;
+}
+body.tvcPre {
+	width: 1080px !important;
+    min-width: 1080px !important;
+    max-width: 1080px !important;
+    height: 1920px !important;
+    min-height: 1920px !important;
+    max-height: 1920px !important;
+    background-color: #000000;
+	color: $colorFontDefaultL3;
+	font: 0.625em/1em $fontApp;
+	font-weight: normal;
+	line-height: 1.75 !important;
+	letter-spacing: 0;
+	margin: 0;
+	padding: 0;
+    overflow: auto;
+}
+a {
+    background-color: $color1;
+    color: $color1Bk;
+    text-decoration: none;
+    padding: 0px 4px;
+    @include transition(all 0.15s ease);
+    &:hover {
+        background-color: $color1Bk;
+        color: $color1;
+        cursor: pointer;
+    }
+}
+a[disabled] {
+    pointer-events: none;
+}
+a {
+	background-color: $color1;
+	color: lighten($color1, 45);
+	text-decoration: none;
+	@include transition(all 0.15s ease);
+	&:hover {
+		background-color: $color2;
+		color: lighten($color2, 45);
+		cursor: pointer;
+	}
+}
+.fullHD.Vertical {
+    display: block;
+    position: absolute;
+    width: 1080px !important;
+    min-width: 1080px !important;
+    max-width: 1080px !important;
+    height: 1920px !important;
+    min-height: 1920px !important;
+    max-height: 1920px !important;
+    text-align: center;
+    vertical-align: middle;
+    background-image: url($bkUrlTVCPreview);
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    margin: 0px auto;
+    padding: 0px;
+    overflow: hidden;
+    z-index: 9;
+}
+.fullHDVerOver {
+    display: block;
+    position: absolute;
+    width: 1080px !important;
+    min-width: 1080px !important;
+    max-width: 1080px !important;
+    height: 1920px !important;
+    min-height: 1920px !important;
+    max-height: 1920px !important;
+    text-align: center;
+    vertical-align: middle;
+    background-image: url($bkUrlTVCPreviewOver);
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    margin: 0px auto;
+    padding: 0px;
+    overflow: hidden;
+    z-index: 99;
+}
+.theme05Logo {
+    display: block;
+    position: absolute;
+    width: 340px;
+    height: 200px;
+    top: 120px;
+    right: 40px;
+}
+$fontWeather : weather;
+.theme05Weather {
+    display: block;
+    position: absolute;
+    width: 280px;
+    height: 380px;
+    top: 100px;
+    right: 380px;
+    font: $fontSize*1 $fontRoya;
+    .widgetWeather {
+        display: block;
+        width: 100%;
+        min-width: 100%;
+        max-width: 100%;
+        height: 100%;
+        min-height: 100%;
+        max-height: 100%;
+        text-align: center;
+
+        background-image: none;
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+
+        margin: 0px;
+        padding: 0px;
+    }
+    .weather {
+        display: block;
+        position: relative;
+        width: 100%;
+        min-width: 100%;
+        max-width: 100%;
+        height: 100%;
+        min-height: 100%;
+        max-height: 100%;
+    }
+    .weather .wi {
+        height: 63px;
+        min-height: 63px;
+        max-height: 63px;
+        line-height: 63px;
+        font: $fontSize*15 $fontWeather;
+        margin: 0px;
+        padding: 0px;
+    }
+    .weather .cw {
+        color: #FFFFFF;
+        height: 63px;
+        min-height: 63px;
+        max-height: 63px;
+        line-height: 63px;
+        font: $fontSize*5.7 $fontRoya;
+        font-weight: 600;
+    }
+    .weather .cc {
+        height: 63px;
+        min-height: 63px;
+        max-height: 63px;
+        line-height: 63px;
+        font: $fontSize*1.5 $fontDefault;
+        margin: 0px 0 0 5px;
+    }
+}
+.theme05TimeDate {
+    display: block;
+    position: absolute;
+    width: 280px;
+    height: 380px;
+    top: 125px;
+    left: 30px;
+    font: $fontSize*1 $fontRoya;
+    .widgetTimeDate {
+        display: block;
+        width: 100%;
+        min-width: 100%;
+        max-width: 100%;
+        height: 100%;
+        min-height: 100%;
+        max-height: 100%;
+        text-align: center;
+
+        background-image: none;
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+
+        margin: 0px;
+        padding: 0px;
+
+        .txtTime {
+            height: 120px;
+            min-height: 120px;
+            line-height: 120px;
+            vertical-align: middle;
+            color: #FFFFFF;
+            font: $fontSize*11.4 $fontRoya;
+            font-weight: 600;
+            margin: 0px;
+            margin-top: -35px;
+            padding: 0px;
+        }
+        .txtDate {
+            color: #A3CAE1;
+            font: $fontSize*3.7 $fontRoya;
+            font-weight: 600;
+            margin: 0px;
+            padding: 0px;
+            padding-top: 10px;
+        }
+    }
+}
+.theme05Marquee {
+    display: block;
+    position: absolute;
+    width: 840px;
+    height: 80px;
+    top: 395px;
+    right: 40px;
+    font: $fontSize*1 $fontCompset;
+    font-weight: 600;
+    overflow: hidden;
+    ul.marquee {
+        li {
+            color: #E0FCFF;
+            font: $fontSize*6.3 $fontNassim;
+            font-weight: 600;
+        }
+    }
+}
+.theme05Video {
+    display: block;
+    position: absolute;
+    width: 960px;
+    height: 540px;
+    top: 680px;
+    right: 25px;
+    font: $fontSize*1 $fontCompset;
+    font-weight: 600;
+    overflow: hidden;
+    .widgetVideo {
+        width: 100%;
+        height: 100%;
+        video {
+            width: 100%;
+            height: 100%;
+        }
+    }
+}
+.theme05Slider01 {
+    display: block;
+    position: absolute;
+    width: 613px;
+    height: 344px;
+    top: 1257px;
+    left: 53px;
+    font: $fontSize*1 $fontCompset;
+    font-weight: 600;
+    overflow: hidden;
+    .widgetSlider {
+        width: 100%;
+        height: 100%;
+        .rhino-container {
+            width: 613px !important;;
+            min-width: 613px;
+            max-width: 613px;
+            height: 344px !important;
+            min-height: 344px;
+            max-height: 344px;
+            overflow: hidden;
+        }
+    }
+    .widgetSlider {
+        width: 100%;
+        height: 100%;
+        ul li img {
+            width: 613px;
+            height: 344px;
+            overflow: hidden;
+        }
+    }
+    
+}
+.theme05Marquee02 {
+    display: block;
+    position: absolute;
+    width: 980px;
+    height: 80px;
+    top: 1715px;
+    right: 65px;
+    font: $fontSize*1 $fontCompset;
+    font-weight: 600;
+    overflow: hidden;
+    ul.marquee {
+        li {
+            color: #ACD6FF;
+            font: $fontSize*3.7 $fontNassim;
+            font-weight: 600;
+        }
+    }
+}
+.theme05Copyright {
+    display: block;
+    position: absolute;
+    width: 980px;
+    height: 40px;
+    top: 1875px;
+    right: 65px;
+    font: $fontSize*1 $fontApp;
+    font-weight: 600;
+    overflow: hidden;
+    .copyrightTxt {
+        color: #4E557B;
+        font: $fontSize*1.3 $fontApp;
+        font-weight: 600;
+    }
+}
+.theme05Loading {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 25px;
+    line-height: 25px;
+    vertical-align: middle;
+    background-color: lighten(#FFCE54, 15);
+    color: $colorAlertTxt;
+    text-align: center;
+    bottom: 0;
+    left: 0;
+    z-index: 9;
+    overflow: hidden;
+    .loadingBk {
+        display: block;
+        position: absolute;
+        width: 1%;
+        max-width: 100%;
+        height: 25px;
+        line-height: 25px;
+        vertical-align: middle;
+        background-color: #FFCE54;
+        z-index: 10;
+        bottom: 0;
+        left: 0;
+    }
+    .loadingTxt {
+        display: block;
+        position: absolute;
+        color: darken(#FFCE54, 35);
+        font-weight: 600;
+        text-align: center;
+        margin: 0px auto;
+        z-index: 11;
+    }
+}
+
+

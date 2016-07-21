@@ -1,0 +1,467 @@
+<!doctype html>
+<html lang="fa">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>سامانه مدیریت و پخش دی وی تال</title>
+    
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link href="logo.png" rel="icon" type="image/png">
+
+    <link href="css/uicon.css" rel="stylesheet" type="text/css">
+    <link href="css/screen.css" media="screen, projection" rel="stylesheet" type="text/css" />
+    <link href="css/print.css" media="print" rel="stylesheet" type="text/css" />
+    <link href="css/wi.css" rel="stylesheet" type="text/css">
+    <!--[if lt IE 8]>
+      <link href="css/ie.css" media="screen, projection" rel="stylesheet" type="text/css" />
+    <![endif]-->
+    <!-- <script src="../bower_components/modernizr/src/Modernizr.js"></script> -->
+    <!-- <script src="js/modernizr.custom.63321.js"></script> -->
+    <!-- <script src="../bower_components/jquery/dist/jquery.js"></script> -->
+    <script src="js/jquery.js"></script>
+    <script src="js/Modernizr.js"></script>
+    
+    <script src="scripts/tooltip.js"></script>
+
+    <script src="js/jquery.remodal.js"></script>
+    <script src="js/jquery.resizeimagetoparent.js"></script>
+    <script src="js/pdate.min.js"></script>
+    <script src="js/datePersian.js"></script>
+    <script src="js/jquery.simpleWeather.js"></script>
+    <script src="js/rhinoslider-1.05.js"></script>
+    <script src="js/jquery.marquee.js"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function(){
+            changeEffect('transfer');
+        });
+    </script>
+    
+</head>
+<body class="tvc">
+
+<notify> <!-- notify place show -->
+</notify> <!-- /notify place show -->
+ 
+<notify-fix> <!-- notify-fix place show -->
+</notify-fix> <!-- /notify-fix place show -->
+
+<div class="limit">
+    <div class="row block">
+
+        <div class="col12 blockHeader">
+
+            <div class="row headerBK">
+                <div class="col4">
+                </div>
+                <div class="col4 headerLogoPlace">
+                    <img class="logoDivital" src="images/logo-divital.svg" alt="DIVITAL Control Panel">
+                </div>
+                <div class="col4">
+                </div>
+            </div>
+
+        </div>
+        
+    </div>
+</div>
+    
+<div class="limit">
+	<div class="row block">
+        
+    	<div class="col12 blockMenuType">
+            
+            <div class="row blockMenuPlace">
+                
+                <div class="col12">
+                    
+                    <div class="row menuTab">
+            
+                        <input id="tab1" type="radio" name="tabs" checked>
+                        <label for="tab1"><span class="icon" data-icon="&#xe088;"></span> داشبورد</label>
+                        <input id="tab2" type="radio" name="tabs">
+                        <label for="tab2"><span class="icon" data-icon="&#xe01b;"></span> مدیریت تبلیغات</label>
+                        <input id="tab3" type="radio" name="tabs">
+                        <label for="tab3"><span class="icon" data-icon="&#xe1b8;"></span> مدیریت پاساژ</label>
+                        <input id="tab4" type="radio" name="tabs">
+                        <label for="tab4"><span class="icon" data-icon="&#xe112;"></span> مدیریت امور مالی</label>
+                        <input id="tab5" type="radio" name="tabs">
+                        <label for="tab5"><span class="icon" data-icon="&#xe044;"></span> اطلاعات پایه</label>
+                        
+                        <div class="blockHeaderBtnLogout">
+                            <a href="tvc-01-login.html" class="btnMenuModeSmallLogout">
+                                <span class="icon" data-icon="&#xe265;"></span>
+                            </a>
+                        </div>
+                        
+                        <div class="blockHeaderBtnVer"> <!-- userNameMenuPlace -->
+                           <a href="tvc-13-verHistory.html" class="btnMenuModeVer">
+                               <span class="txt">ver. 1.1.2</span>
+                            </a>
+                        </div>
+                        
+                       <div class="blockHeaderBtnUser"> <!-- userNameMenuPlace -->
+                           <a href="#" class="btnMenuModeUser">
+                               <span class="icon" data-icon="&#xe070;"></span>
+                               <span class="txt">نام کاربر کامل</span>
+                            </a>
+                        </div>
+                        
+                        <section id="content2">
+                            <div class="row itemSpace">
+                                <div class="col2">
+                                    <a href="tvc-02-package.html" class="btnMenuHeader">
+                                        <span class="icon" data-icon="1"></span>
+                                        <span class="txt">بسته ها و محتوا</span>
+                                    </a>
+                                </div>
+                                <div class="col2">
+                                    <a href="tvc-07-template.html" class="btnMenuHeader">
+                                        <span class="icon" data-icon="&#xe29c;"></span>
+                                        <span class="txt">قالب ها و ویرایش</span>
+                                    </a>
+                                </div>
+                                <div class="col2">
+                                    <a href="#" class="btnMenuHeader">
+                                        <span class="icon" data-icon="&#xe1f7;"></span>
+                                        <span class="txt">سیستم های نمایش</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </section>
+                        
+                        <section id="content3">
+                            <div class="row itemSpace">
+                                <div class="col2">
+                                    <a href="#" class="btnMenuHeader">
+                                        <span class="icon" data-icon="&#xe02c;"></span>
+                                        <span class="txt">فروشگاه ها</span>
+                                    </a>
+                                </div>
+                                <div class="col2">
+                                    <a href="#" class="btnMenuHeader">
+                                        <span class="icon" data-icon="&#xe0e5;"></span>
+                                        <span class="txt">رفاهیات مجموعه</span>
+                                    </a>
+                                </div>
+                                <div class="col2">
+                                    <a href="#" class="btnMenuHeader">
+                                        <span class="icon" data-icon="&#xe0ad;"></span>
+                                        <span class="txt">نقشه ها</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </section>
+                        
+                        <section id="content4">
+                            <div class="row itemSpace">
+                                <div class="col2">
+                                    <a href="#" class="btnMenuHeader">
+                                        <span class="icon" data-icon="&#xe040;"></span>
+                                        <span class="txt">آمار سیستم</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </section>
+                        
+                        <section id="content5">
+                            <div class="row itemSpace">
+                                <div class="col2">
+                                    <a href="#" class="btnMenuHeader">
+                                        <span class="icon" data-icon="&#xe325;"></span>
+                                        <span class="txt">جداول مورد نیاز</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </section>
+
+			         </div>
+
+                </div>
+                        
+            </div>
+            
+        </div>
+        
+    </div>
+</div>
+
+<div class="limit">
+	<div class="row block">
+        
+    	<div class="col12 blockContentType">
+            <div class="blockContentPlace">
+                
+                <div class="editPackagePage">
+                    <div class="editPackageContent">
+
+                        <div class="row rowSelectHeader">
+                            <div class="col6 editPackageBtnPlace">
+                                <div class="col4">
+                                    <a href="tvc-08-templateNew.html" class="btnMenuMode">
+                                        <span class="icon" data-icon="&#xe04d;"></span>
+                                        <span class="txt">بازگشت</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="rowSelectDefault">
+                            <div class="row itemSpace">
+                                <div class="col4">
+                                </div>
+                                <div class="col4">
+                                    <input class="formInputDefault" type="text" placeholder="نام قالب">
+                                </div>
+                                <div class="col1">
+                                    <a class="btnSmallOk">
+                                        <span class="icon" data-icon="&#xe042;"></span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+    
+<div class="fullHDeditMode">
+	<div class="section1-them04">
+			<div class="time-them04">
+				 <div class="Edit">
+            		<div class="menuTitle">
+		                ساعت
+                    </div>
+                    <div class="menuEdit">
+                        <a class="btnTVCAEdit"><span class="icon" data-icon="&#xe05d;"></span></a>
+                        <a class="btnTVCAEditDis disabled"><span class="icon" data-icon="&#xe0a5;"></span></a>
+                        <a class="btnTVCAEditDis disabled"><span class="icon" data-icon="&#xe0b4;"></span></a>
+                        <a class="btnTVCAEditDis disabled"><span class="icon" data-icon="&#xe0b3;"></span></a>
+                    </div>
+            
+				</div>
+			</div>
+			<div class="content-them04">
+				<div class="bottom-them04">
+					<div class="row">
+						<div class="col-s-them04">
+							<a href="#">
+							<img src="images/directory.png">
+							</a>
+						</div>
+						<div class="col-b-them04">
+							<a href="#">
+							<img src="images/facility.png">
+							</a>
+						</div>
+					</div>
+					<div class="row">
+						<a href="#">
+						<img src="images/sale.png">
+						</a>
+					</div>
+					<div class="row">
+						<div class="col-b-them04">
+							<a href="#">
+							<img src="images/map.png">
+							</a>
+						</div>
+						<div class="col-s-them04">
+							<a href="#">
+							<img src="images/event.png">
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+	</div>
+	<div class="section2-them04">
+		<div class="slider-them04">
+				 <div class="Edit">
+            
+		            <div class="menuTitle">
+		                کادر  "320*700"  محل قرارگیری عکس های  تبلیغاتی
+                    </div>
+                    <div class="menuEdit">
+                        <a class="btnTVCAEdit"><span class="icon" data-icon="&#xe02f;"></span></a>
+                        <a class="btnTVCAEditDis disabled"><span class="icon" data-icon="&#xe05d;"></span></a>
+                        <a class="btnTVCAEditDis disabled"><span class="icon" data-icon="&#xe0a5;"></span></a>
+                        <a class="btnTVCAEditDis disabled"><span class="icon" data-icon="&#xe0b4;"></span></a>
+                    </div>
+            
+    			</div>
+		</div>
+		<div class="ads-txt-them04">
+			<div class="Edit">
+            
+            <div class="menuTitle">
+                کادر با طول 100 % محل قرارگیری متن تبلیغاتی
+                    </div>
+                    <div class="menuEdit">
+                        <a class="btnTVCAEditDis disabled"><span class="icon" data-icon="&#xe02f;"></span></a>
+                        <a class="btnTVCAEditDis disabled"><span class="icon" data-icon="&#xe05d;"></span></a>
+                        <a class="btnTVCAEditDis disabled"><span class="icon" data-icon="&#xe0a5;"></span></a>
+                        <a class="btnTVCAEdit"><span class="icon" data-icon="&#xe0b3;"></span></a>
+                    </div>
+            
+        </div>
+		</div>
+	</div>
+</div>
+<br>
+<br>
+<div class="fullHDeditMode">
+		<div class="section1-them04">
+			<div class="time-them04">
+				 <div class="blockEditModeOver">
+                    <div class="blockEditModeOverlay">
+                        <a class="btnTVCAEditOk">
+                            <span class="icon" data-icon=""></span>
+                        </a>
+                        <a class="btnTVCAEditCancel">
+                            <span class="icon" data-icon=""></span>
+                        </a>
+                    </div>
+
+                    <div class="widgetTimeDate">
+                        <div id="show_time_1" class="txtTime">17:11
+                        </div>
+                        <div id="date" class="txtDate">سه شنبه 22 تير</div>
+                        <script>
+                            $(document).ready(function() {
+                                var _date = showdate();
+                                $("#date").text(_date);
+                            });
+                        </script>
+                    </div>
+
+                </div>
+			</div>
+			<div class="content-them04">
+				<div class="bottom-them04">
+					<div class="row">
+						<div class="col-s-them04">
+							<a href="#">
+							<img src="images/directory.png">
+							</a>
+						</div>
+						<div class="col-b-them04">
+							<a href="#">
+							<img src="images/facility.png">
+							</a>
+						</div>
+					</div>
+					<div class="row">
+						<a href="#">
+						<img src="images/sale.png">
+						</a>
+					</div>
+					<div class="row">
+						<div class="col-b-them04">
+							<a href="#">
+							<img src="images/map.png">
+							</a>
+						</div>
+						<div class="col-s-them04">
+							<a href="#">
+							<img src="images/event.png">
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+	    </div>
+	    <div class="section2-them04">
+	    	 <div class="slider-them04">
+	            <div class="blockEditModeOver">
+	                <div class="blockEditModeOverlay">
+	                    <a class="btnTVCAEditOk">
+	                        <span class="icon" data-icon="&#xe1cf;"></span>
+	                    </a>
+	                    <a class="btnTVCAEditCancel">
+	                        <span class="icon" data-icon="&#xe0da;"></span>
+	                    </a>
+	                </div>
+
+	               
+					 <div class="widgetSlider">
+	                     <ul id="slider">
+	                        <li><img src='images/slider-them04.png' width="700px" height="320px" ></li>
+	                        <li><img src='images/slider-them04.png' width="700px" height="320px" ></li>
+	                    </ul>
+					 </div>
+					
+
+				</div>
+			</div>
+		    <div class="ads-txt-them04">
+	            <div class="blockEditModeOver">
+		            <div class="blockEditModeOverlay">
+		                <a class="btnTVCAEditOk">
+		                    <span class="icon" data-icon="&#xe1cf;"></span>
+		                </a>
+		                <a class="btnTVCAEditCancel">
+		                    <span class="icon" data-icon="&#xe0da;"></span>
+		                </a>
+		            </div>
+
+		            <div class="widgetText">
+		                
+		                <ul id="marquee" class="marquee">
+		                    <li>چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است</li>
+
+		                </ul>
+		                
+		                <script>
+		                    $(document).ready(function (){
+		                          $("#marquee").marquee({yScroll: "bottom"});
+		                    });
+		                </script>
+		                
+		            </div>
+
+	        	</div>
+    		</div>
+
+		</div>
+
+<br><br>
+    
+<div class="row rowSelectHeader">
+    <div class="col3">
+    </div>
+    <div class="col6">
+        <div class="col4">
+            <a class="btnPageOk">
+                <span class="icon" data-icon="&#xe042;"></span>
+                <span class="txt">تایید و ذخیره</span>
+            </a>
+        </div>
+        <div class="col4">
+            <a href="tvc-04-packagePreview.html" target="_blank" class="btnPagePre">
+                <span class="icon" data-icon="&#xe08b;"></span>
+                <span class="txt">پیش نمایش</span>
+            </a>
+        </div>
+        <div class="col4">
+            <a href="tvc-07-template.html" class="btnPageNOk">
+                <span class="icon" data-icon="&#xe036;"></span>
+                <span class="txt">انصراف</span>
+            </a>
+        </div>
+    </div>
+</div>
+
+<br><br>
+
+                
+            </div>
+        </div>
+        
+    </div>
+</div>
+    
+</body>
+</html>
+
+
+

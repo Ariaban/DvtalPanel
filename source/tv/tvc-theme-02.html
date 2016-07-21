@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="fa">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>سامانه مدیریت و پخش دی وی تال</title>
+
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link href="logo.png" rel="icon" type="image/png">
+
+    <link href="../css/uicon.css" rel="stylesheet" type="text/css">
+    <link href="../css/tv-theme-02.css" media="screen, projection" rel="stylesheet" type="text/css" />
+    <link href="../css/wi.css" rel="stylesheet" type="text/css">
+    
+    <!--[if lt IE 8]>
+      <link href="css/ie.css" media="screen, projection" rel="stylesheet" type="text/css" />
+    <![endif]-->
+    
+    <script src="../js/jquery.js"></script>
+    <script src="../js/Modernizr.js"></script>
+    
+    <script src="../js/jquery.resizeimagetoparent.js"></script>
+    <script src="../js/pdate.min.js"></script>
+    <script src="../js/datePersian.js"></script>
+    <script src="../js/jquery.simpleWeather.js"></script>
+    <script src="../js/rhinoslider-1.05.js"></script>
+    <script src="../js/jquery.marquee.js"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function(){
+            changeEffect('transfer');
+        });
+    </script>
+    
+</head>
+<body class="tvcPre">
+	<div class="containor">
+		<div class="logo"></div>
+		<div class="header">
+			<div class="bg">
+			<div class="widgetText">
+                
+                <ul id="marquee" class="marquee">
+                    <li>چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است</li>
+                </ul>
+                
+                <script>
+                    $(document).ready(function (){
+                          $("#marquee").marquee({yScroll: "bottom"});
+                    });
+                </script>
+                
+            </div>
+			</div>
+		</div>
+		<div class="content">
+			<div class="slide">
+                <div class="widgetSlider">
+                    <ul id="slider">
+                        <li><img src='../slide/food01.jpg' width="595px" height="573px" ></li>
+                        <li><img src='../slide/food02.jpg' width="595px" height="573px" ></li>
+                    </ul>
+                </div>
+			</div>
+			<div class="video">
+				<div class="widgetVideo">
+                    <video> <!-- <video autoplay loop> -->
+                        <source src="../video/SampleVideo_1280x720.webm" type="video/webm">
+                        <source src="../video/SampleVideo_1280x720.mp4" type="video/mp4">
+                    </video>
+                </div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

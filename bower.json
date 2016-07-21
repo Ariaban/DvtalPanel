@@ -1,0 +1,26 @@
+{
+  "name": "fent",
+  "description": "sass framework",
+  "version": "1.0",
+  "main": "index.html",
+  "authors": [
+    "Rohan IT"
+  ],
+  "license": "MIT",
+  "moduleType": [
+    "node"
+  ],
+  "homepage": "http://RohanIT.ir",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "jquery/jquery#~2.1.4",
+    "modernizr": "modernizr/modernizr#~3.2.0"
+  }
+}

@@ -1,0 +1,554 @@
+/* UI/UX: RohanIT.ir */
+/* طراحی رابط و تجربه کاربری فن آوری اطلاعات روهان */
+@charset "utf-8";
+@import "tv";
+
+$fontApp : $fontMirza;
+
+$bkUrlTVCPreview : '';
+body.tvcPre:before {
+	width: 100%;
+    height: 100%;
+	content: "";
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	display: block;
+
+    background-color: #000000;
+	background-image: url($bkUrlTVCPreview);
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+
+	-webkit-filter: blur(0px) grayscale(0%);
+	-moz-filter: blur(0px) grayscale(0%);
+	-o-filter: blur(0px) grayscale(0%);
+	-ms-filter: blur(0px) grayscale(0%);
+	filter: blur(0px) grayscale(0%);
+
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+	filter: alpha(opacity=0);
+	-moz-opacity: 0;
+	-khtml-opacity: 0;
+	opacity: 0;
+	z-index: -1;
+    margin: 0;
+	padding: 0;
+    overflow: hidden;
+}
+body.tvcPre {
+	width: 1920px !important;
+    min-width: 1920px !important;
+    max-width: 1920px !important;
+    height: 1080px !important;
+    min-height: 1080px !important;
+    max-height: 1080px !important;
+    background-color: #000000;
+	color: $colorWhite1;
+	font: 0.625em/1em $fontApp;
+	font-weight: normal;
+	line-height: 1.75 !important;
+	letter-spacing: 0;
+	margin: 0;
+	padding: 0;
+    overflow: hidden;
+}
+
+a {
+    background-color: $color1;
+    color: $color1Bk;
+    text-decoration: none;
+    padding: 0px 4px;
+    @include transition(all 0.15s ease);
+    &:hover {
+        background-color: $color1Bk;
+        color: $color1;
+        cursor: pointer;
+    }
+}
+a[disabled] {
+    pointer-events: none;
+}
+
+a {
+	background-color: $color1;
+	color: lighten($color1, 45);
+	text-decoration: none;
+	@include transition(all 0.15s ease);
+	&:hover {
+		background-color: $color2;
+		color: lighten($color2, 45);
+		cursor: pointer;
+	}
+}
+
+$gray : #D0D0D0;
+$dark-blue:#1D1D3F;
+@font-face {
+	font-family: 'WMitraBold';
+	src :url(../fonts/WebMitraBold.eot);
+	src :url(../fonts/WebMitraBoldd41d.eot?#iefix) format('embedded-opentype'),
+		 url(../fonts/WebMitraBold.woff) format('woff'),
+		 url(../fonts/WebMitraBold.ttf) format('trutype'),
+		 url(../fonts/WebMitraBold.svg#WebMitraBold) format('svg');
+	font-weight: bold;
+	font-style: normal;
+	unicode-range :U+0600-06FF;
+}
+html, body {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	text-align: center;
+	direction: rtl;
+}
+
+.container {
+  width: 1920px;
+  height: 1080px;
+  overflow:hidden;
+  align-items: center;
+  text-align: center;
+  font-family:WMitraBold;
+  background-image: url();
+  color: #FFF;
+}
+.col1 {
+	width: 760px;
+	max-width: 760px;
+	min-width: 760px;
+	height: 1080px;
+	overflow: hidden;
+	max-height: 1080px;
+	min-height: 1080px;
+	float: right;
+	margin-bottom: auto;
+	text-align: center;
+	img {
+		width: 400px;
+	}
+	.view-mobile {
+		width: 400px;
+		margin:auto;
+	}
+	.container-them03 {
+		width: 400px;
+		background: #fff;
+	}
+}
+.header {
+	background: #d9b451;
+	padding:10px;
+	margin-bottom: 10px;
+	margin-top: 5px;
+}
+.col2 {
+	width: 960px;
+	max-width: 960px;
+	min-width: 960px;
+	height: 1080px;
+	overflow: hidden;
+	max-height: 1080px;
+	min-height: 1080px;
+	float: right;
+	margin-bottom: auto;
+	text-align: center;
+	img {
+		width: 505px;
+	}
+	.view-tablet {
+		width: 505px;
+		overflow: hidden;
+		margin:auto;
+	}
+	.container-them04 {
+		width: 505px;
+		background: #fff;
+		.marquee p {
+            position: absolute;
+            color: #FFFFFF;
+            width: 100%;
+            height: 65px !important;
+            line-height: 45px;
+            vertical-align: middle;
+            font-weight: 400;
+            font: 100% Mirza, Tahoma, Verdana, Geneva, sans-serif, uicon !important;
+            font-family: WMitraBold;
+            text-align: center;
+            margin: 0px;
+            padding: 5px 0px;
+            text-align: center;
+            text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.35);
+            filter: dropshadow(color=rgba(0, 0, 0, 0.35), offx=1, offy=1);
+            transform: translateX(100%);
+            -moz-transform: translateX(100%);
+            -webkit-transform: translateX(100%);
+        }
+        .ads-txt {
+            width: 100%;
+            height: 65px;
+            background: #4d82a4 url(../images/bg-txt.png);
+            .widgetText {
+                position: relative;
+                width: 100%;
+                min-width: 100%;
+                max-width: 100%;
+                height: 100%;
+                min-height: 100%;
+                max-height: 100%;
+                background-color: transparent;
+                color: #FFFFFF;
+                font: 40px;
+
+                margin: 0px;
+                padding: 0px;
+                overflow: hidden;
+                .marquee {
+                    position: relative;
+                    width: 100%;
+                    min-width: 100%;
+                    max-width: 100%;
+                    height: 100%;
+                    min-height: 100%;
+                    max-height: 100%;
+                    margin: 0px;
+                    padding: 0px;
+                    overflow: hidden;
+                }
+            }
+        }
+	}
+}
+
+.ads-txt {
+    width: 100%;
+    height: 100px;
+    background: #4d82a4 url(../images/bg-txt.png);
+    .widgetText {
+        position: relative;
+        width: 100%;
+        min-width: 100%;
+        max-width: 100%;
+        height: 100%;
+        min-height: 100%;
+        max-height: 100%;
+        background-color: transparent;
+        color: #FFFFFF;
+        font: 40px;
+
+        margin: 0px;
+        padding: 0px;
+        overflow: hidden;
+        .marquee {
+            position: relative;
+            width: 100%;
+            min-width: 100%;
+            max-width: 100%;
+            height: 100%;
+            min-height: 100%;
+            max-height: 100%;
+            margin: 0px;
+            padding: 0px;
+            overflow: hidden;
+        }
+    }
+}
+.marquee p {
+    position: absolute;
+    color: #FFFFFF;
+    width: 100%;
+    height: 113px !important;
+    line-height: 45px;
+    vertical-align: middle;
+    font-weight: 400;
+    font: 100% Mirza, Tahoma, Verdana, Geneva, sans-serif, uicon !important;
+    font-family: WMitraBold;
+    text-align: center;
+    margin: 0px;
+    padding: 25px 0px;
+    text-align: center;
+    text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.35);
+    filter: dropshadow(color=rgba(0, 0, 0, 0.35), offx=1, offy=1);
+    transform: translateX(100%);
+    -moz-transform: translateX(100%);
+    -webkit-transform: translateX(100%);
+}
+
+.marquee p:nth-child(1) {
+    animation: left-one 20s ease infinite;
+    -moz-animation: left-one 20s ease infinite;
+    -webkit-animation: left-one 20s ease infinite;
+}
+.marquee p:nth-child(2) {
+    animation: left-two 20s ease infinite;
+    -moz-animation: left-two 20s ease infinite;
+    -webkit-animation: left-two 20s ease infinite;
+}
+.marquee.down p {
+    transform:translateY(-100%);
+    -moz-transform:translateY(-100%);
+    -webkit-transform:translateY(-100%);
+}
+.marquee.down p:nth-child(1) {
+    animation: down-one 20s ease infinite;
+    -moz-animation: down-one 20s ease infinite;
+    -webkit-animation: down-one 20s ease infinite;
+}
+.marquee.down p:nth-child(2) {
+    animation: down-two 20s ease infinite;
+    -moz-animation: down-two 20s ease infinite;
+    -webkit-animation: down-two 20s ease infinite;
+}
+.marquee.up p {
+    transform:translateY(100%);
+    -moz-transform:translateY(100%);
+    -webkit-transform:translateY(100%);
+}
+.marquee.up p:nth-child(1) {
+    animation: up-one 20s ease infinite;
+    -moz-animation: up-one 20s ease infinite;
+    -webkit-animation: up-one 20s ease infinite;
+}
+.marquee.up p:nth-child(2) {
+    animation: up-two 20s ease infinite;
+    -moz-animation: up-two 20s ease infinite;
+    -webkit-animation: up-two 20s ease infinite;
+}
+
+/*================================
+    Move the Marquee Upwards
+==================================*/
+
+/** Mozilla Firefox Keyframes **/
+@-moz-keyframes up-one {
+    0%  {
+        -moz-transform:translateY(100%);
+    }
+    10% {
+        -moz-transform:translateY(0);
+    }
+    40% {
+        -moz-transform:translateY(0);
+    }
+    50% {
+        -moz-transform:translateY(-100%);
+    }
+    100%{
+        -moz-transform:translateY(-100%);
+    }
+}
+@-moz-keyframes up-two {
+    0% {
+        -moz-transform:translateY(100%);
+    }
+    50% {
+        -moz-transform:translateY(100%);
+    }
+    60% {
+        -moz-transform:translateY(0);
+    }
+    90% {
+        -moz-transform:translateY(0);
+    }
+    100%{
+        -moz-transform:translateY(-100%);
+    }
+}
+
+
+/*================================
+    Move the Marquee to the Left
+==================================*/
+
+/** Mozilla Firefox Keyframes **/
+@-moz-keyframes left-one {
+    0%  {
+        -moz-transform:translateX(100%);
+    }
+    10% {
+        -moz-transform:translateX(0);
+    }
+    40% {
+        -moz-transform:translateX(0);
+    }
+    50% {
+        -moz-transform:translateX(-100%);
+    }
+    100%{
+        -moz-transform:translateX(-100%);
+    }
+}
+@-moz-keyframes left-two {
+    0% {
+        -moz-transform:translateX(100%);
+    }
+    50% {
+        -moz-transform:translateX(100%);
+    }
+    60% {
+        -moz-transform:translateX(0);
+    }
+    90% {
+        -moz-transform:translateX(0);
+    }
+    100%{
+        -moz-transform:translateX(-100%);
+    }
+}
+/** Webkit Keyframes **/
+@-webkit-keyframes left-one {
+    0% {
+        -webkit-transform:translateX(100%);
+    }
+    10% {
+        -webkit-transform:translateX(0);
+    }
+    40% {
+        -webkit-transform:translateX(0);
+    }
+    50% {
+        -webkit-transform:translateX(-100%);
+    }
+    100%{
+        -webkit-transform:translateX(-100%);
+    }
+}
+@-webkit-keyframes left-two {
+    0% {
+        -webkit-transform:translateX(100%);
+    }
+    50% {
+        -webkit-transform:translateX(100%);
+    }
+    60% {
+        -webkit-transform:translateX(0);
+    }
+    90% {
+        -webkit-transform:translateX(0);
+    }
+    100%{
+        -webkit-transform:translateX(-100%);
+    }
+}
+
+/*================================
+    Move the Marquee Downwards
+==================================*/
+
+/** Mozilla Firefox Keyframes **/
+@-moz-keyframes down-one {
+    0%  {
+        -moz-transform:translateY(-100%);
+    }
+    10% {
+        -moz-transform:translateY(0);
+    }
+    40% {
+        -moz-transform:translateY(0);
+    }
+    50% {
+        -moz-transform:translateY(100%);
+    }
+    100%{
+        -moz-transform:translateY(100%);
+    }
+}
+@-moz-keyframes down-two {
+    0% {
+        -moz-transform:translateY(-100%);
+    }
+    50% {
+        -moz-transform:translateY(-100%);
+    }
+    60% {
+        -moz-transform:translateY(0);
+    }
+    90% {
+        -moz-transform:translateY(0);
+    }
+    100%{
+        -moz-transform:translateY(100%);
+    }
+}
+
+/** Webkit Keyframes **/
+@-webkit-keyframes down-one {
+    0% {
+        -webkit-transform:translateY(-100%);
+    }
+    10% {
+        -webkit-transform:translateY(0);
+    }
+    40% {
+        -webkit-transform:translateY(0);
+    }
+    50% {
+        -webkit-transform:translateY(100%);
+    }
+    100%{
+        -webkit-transform:translateY(100%);
+    }
+}
+@-webkit-keyframes down-two {
+    0% {
+        -webkit-transform:translateY(-100%);
+    }
+    50% {
+        -webkit-transform:translateY(-100%);
+    }
+    60% {
+        -webkit-transform:translateY(0);
+    }
+    90% {
+        -webkit-transform:translateY(0);
+    }
+    100%{
+        -webkit-transform:translateY(100%);
+    }
+}
+
+/** Webkit Keyframes **/
+@-webkit-keyframes up-one {
+    0% {
+        -webkit-transform:translateY(100%);
+    }
+    10% {
+        -webkit-transform:translateY(0);
+    }
+    40% {
+        -webkit-transform:translateY(0);
+    }
+    50% {
+        -webkit-transform:translateY(-100%);
+    }
+    100%{
+        -webkit-transform:translateY(-100%);
+    }
+}
+@-webkit-keyframes up-two {
+    0% {
+        -webkit-transform:translateY(100%);
+    }
+    50% {
+        -webkit-transform:translateY(100%);
+    }
+    60% {
+        -webkit-transform:translateY(0);
+    }
+    90% {
+        -webkit-transform:translateY(0);
+    }
+    100%{
+        -webkit-transform:translateY(-100%);
+    }
+}
+.logo {
+    width: 100px;
+    height: 90px;
+    background: url(../images/logo-DV.png) top left no-repeat;
+    float: left;
+}
+
+

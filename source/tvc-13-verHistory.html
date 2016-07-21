@@ -1,0 +1,307 @@
+<!doctype html>
+<html lang="fa">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>سامانه مدیریت و پخش دی وی تال</title>
+    
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link href="logo.png" rel="icon" type="image/png">
+
+    <link href="css/uicon.css" rel="stylesheet" type="text/css">
+    <link href="css/screen.css" media="screen, projection" rel="stylesheet" type="text/css" />
+    <link href="css/print.css" media="print" rel="stylesheet" type="text/css" />
+    <!--[if lt IE 8]>
+      <link href="css/ie.css" media="screen, projection" rel="stylesheet" type="text/css" />
+    <![endif]-->
+    <!-- <script src="../bower_components/jquery/dist/jquery.js"></script> -->
+    <script src="js/jquery.js"></script>
+    <!-- <script src="../bower_components/modernizr/src/Modernizr.js"></script> -->
+    <script src="js/modernizr.js"></script>
+    
+    <script src="scripts/tooltip.js"></script>
+    
+</head>
+<body class="tvc">
+
+<notify> <!-- notify place show -->
+</notify> <!-- /notify place show -->
+ 
+<notify-fix> <!-- notify-fix place show -->
+</notify-fix> <!-- /notify-fix place show -->
+
+<div class="limit">
+    <div class="row block">
+
+        <div class="col12 blockHeader">
+
+            <div class="row headerBK">
+                <div class="col4">
+                </div>
+                <div class="col4 headerLogoPlace">
+                    <img class="logoDivital" src="images/logo-divital.svg" alt="DIVITAL Control Panel">
+                </div>
+                <div class="col4">
+                </div>
+            </div>
+
+        </div>
+        
+    </div>
+</div>
+    
+<div class="limit">
+	<div class="row block">
+        
+    	<div class="col12 blockMenuType">
+            
+            <div class="row blockMenuPlace">
+                
+                <div class="col12">
+                    
+                    <div class="row menuTab">
+            
+                        <input id="tab1" type="radio" name="tabs" checked>
+                        <label for="tab1"><span class="icon" data-icon="&#xe088;"></span> داشبورد</label>
+                        <input id="tab2" type="radio" name="tabs">
+                        <label for="tab2"><span class="icon" data-icon="&#xe01b;"></span> مدیریت تبلیغات</label>
+                        <input id="tab3" type="radio" name="tabs">
+                        <label for="tab3"><span class="icon" data-icon="&#xe1b8;"></span> مدیریت پاساژ</label>
+                        <input id="tab4" type="radio" name="tabs">
+                        <label for="tab4"><span class="icon" data-icon="&#xe112;"></span> مدیریت امور مالی</label>
+                        <input id="tab5" type="radio" name="tabs">
+                        <label for="tab5"><span class="icon" data-icon="&#xe044;"></span> اطلاعات پایه</label>
+                        
+                        <div class="blockHeaderBtnLogout">
+                            <a href="tvc-01-login.html" class="btnMenuModeSmallLogout">
+                                <span class="icon" data-icon="&#xe265;"></span>
+                            </a>
+                        </div>
+                        
+                        <div class="blockHeaderBtnVer"> <!-- userNameMenuPlace -->
+                           <a href="#" class="btnMenuModeVer">
+                               <span class="txt">ver. 1.1.2</span>
+                            </a>
+                        </div>
+                        
+                        <div class="blockHeaderBtnUser"> <!-- userNameMenuPlace -->
+                           <a href="#" class="btnMenuModeUser">
+                               <span class="icon" data-icon="&#xe070;"></span>
+                               <span class="txt">نام کاربر کامل</span>
+                            </a>
+                        </div>
+                        
+                        <section id="content2">
+                            <div class="row itemSpace">
+                                <div class="col2">
+                                    <a href="tvc-02-package.html" class="btnMenuHeader">
+                                        <span class="icon" data-icon="1"></span>
+                                        <span class="txt">بسته ها و محتوا</span>
+                                    </a>
+                                </div>
+                                <div class="col2">
+                                    <a href="tvc-07-template.html" class="btnMenuHeader">
+                                        <span class="icon" data-icon="&#xe29c;"></span>
+                                        <span class="txt">قالب ها و ویرایش</span>
+                                    </a>
+                                </div>
+                                <div class="col2">
+                                    <a href="#" class="btnMenuHeader">
+                                        <span class="icon" data-icon="&#xe1f7;"></span>
+                                        <span class="txt">سیستم های نمایش</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </section>
+                        
+                        <section id="content3">
+                            <div class="row itemSpace">
+                                <div class="col2">
+                                    <a href="#" class="btnMenuHeader">
+                                        <span class="icon" data-icon="&#xe02c;"></span>
+                                        <span class="txt">فروشگاه ها</span>
+                                    </a>
+                                </div>
+                                <div class="col2">
+                                    <a href="#" class="btnMenuHeader">
+                                        <span class="icon" data-icon="&#xe0e5;"></span>
+                                        <span class="txt">رفاهیات مجموعه</span>
+                                    </a>
+                                </div>
+                                <div class="col2">
+                                    <a href="#" class="btnMenuHeader">
+                                        <span class="icon" data-icon="&#xe0ad;"></span>
+                                        <span class="txt">نقشه ها</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </section>
+                        
+                        <section id="content4">
+                            <div class="row itemSpace">
+                                <div class="col2">
+                                    <a href="#" class="btnMenuHeader">
+                                        <span class="icon" data-icon="&#xe040;"></span>
+                                        <span class="txt">آمار سیستم</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </section>
+                        
+                        <section id="content5">
+                            <div class="row itemSpace">
+                                <div class="col2">
+                                    <a href="#" class="btnMenuHeader">
+                                        <span class="icon" data-icon="&#xe325;"></span>
+                                        <span class="txt">جداول مورد نیاز</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </section>
+
+			         </div>
+
+                </div>
+                        
+            </div>
+            
+        </div>
+        
+    </div>
+</div>
+    
+<div class="limit">
+	<div class="row block">
+        
+    	<div class="col12 blockContentType">
+            <div class="blockContentPlace">
+                
+                
+                
+
+        
+        
+        
+        
+                <div class="row">
+                    <div class="col pageHeaderTitle">
+                        آرشیو تاریخچه ورژن ها
+                    </div>
+                    <div class="col">
+                        <a class="btnMenuModeTransparent" title="توضیحات راهنما" rel="tooltip">
+                            <span class="icon" data-icon="&#xe145;"></span>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="row blockVerHistory">
+                    <div class="row pageHeaderRow">
+                        <div class="col pageHeaderSub">
+                            عنوان ورژن و یا شماره هفته
+                        </div>
+                        <div class="col pageHeaderSubDate">
+                            ۱۳۹۵/۱۲/۲۸
+                        </div>
+                    </div>
+                    <ul class="row blockVerHistoryDetails">
+                        <li>مطالب و مورد های انجام شده و موجود در این اسپرینت</li>
+                        <li>مطالب و مورد های انجام شده و موجود در این اسپرینت</li>
+                        <li>مطالب و مورد های انجام شده و موجود در این اسپرینت</li>
+                        <li class="moduleNew">مطالب و مورد های انجام شده و موجود در این اسپرینت</li>
+                        <li class="moduleBug">مطالب و مورد های انجام شده و موجود در این اسپرینت</li>
+                        <li>مطالب و مورد های انجام شده و موجود در این اسپرینت</li>
+                    </ul>
+                </div>
+                
+                <div class="row blockVerHistory">
+                    <div class="row pageHeaderRow">
+                        <div class="col pageHeaderSub">
+                            عنوان ورژن و یا شماره هفته
+                        </div>
+                        <div class="col pageHeaderSubDate">
+                            ۱۳۹۵/۱۲/۲۸
+                        </div>
+                    </div>
+                    <ul class="row blockVerHistoryDetails">
+                        <li>مطالب و مورد های انجام شده و موجود در این اسپرینت</li>
+                        <li class="moduleNew">مطالب و مورد های انجام شده و موجود در این اسپرینت</li>
+                        <li class="moduleNew">مطالب و مورد های انجام شده و موجود در این اسپرینت</li>
+                        <li class="moduleBug">مطالب و مورد های انجام شده و موجود در این اسپرینت</li>
+                    </ul>
+                </div>
+                
+                
+                
+                
+                
+        
+        
+        
+                <div class="gridCompFooter"> <!-- gridCompFooter -->
+            <div class="pagingNoRecPlace">
+                <span class="noRecTxt">تعداد کل: </span>
+                <span class="noRecAll">۲۰۰</span>
+            </div>
+            <div class="pagingPagesPlace">
+                <ul class="paging">
+                    <li class="arrowRight">
+                        <a href=""><span class="icon" data-icon="&#xe128;"></span></a>
+                    </li>
+                    <li class="select"><a href="">۱</a></li>
+                    <li><a href="">۲</a></li>
+                    <li><a href="">۳</a></li>
+                    <li><a href="">۴</a></li>
+                    <li class="more">
+                        <a href=""><span class="icon" data-icon="&#xe094;"></span></a>
+                    </li>
+                    <li><a href="">۸</a></li>
+                    <li><a href="">۹</a></li>
+                    <li class="arrowLeft">
+                        <a href=""><span class="icon" data-icon="&#xe129;"></span></a>
+                    </li>
+                </ul>
+            </div>
+            <div class="pagingBlockLeftPlace">
+                <div class="pagingNoPlace">
+                    <span class="noAll">۲۰</span>
+                    <span class="noSep">/</span>
+                    <span><input class="formInputDefault no" type="text" placeholder="شماره صفحه"></span>
+                </div>
+                <div class="pagingRowNoPlace">
+                    <select class="formInputDefault rowwNo">
+                        <option>۱۰</option>
+                        <option>۲۰</option>
+                        <option>۳۰</option>
+                        <option>۵۰</option>
+                    </select>
+                </div>
+            </div>
+        </div> <!-- /gridCompFooter -->
+        
+        
+        
+        
+        
+        
+
+                
+                
+                
+                
+            
+            </div>
+        </div>
+        
+    </div>
+</div>
+
+<div class="limit">
+    <div class="row block">
+        <div class="col12 blockLFooterType">
+            تمامی حقوق محفوظ میباشد و متعلق به دی وی تال است.
+        </div>
+    </div>
+</div>  
+
+</body>
+</html>

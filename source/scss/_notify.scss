@@ -1,0 +1,117 @@
+/* UI/UX: RohanIT.ir */
+/* طراحی رابط و تجربه کاربری فن آوری اطلاعات روهان */
+@charset "utf-8";
+
+notify {
+	display: block;
+	position: fixed;
+	top: 5%;
+	right: 5%;
+	width: 210px;
+	height: auto;
+	border-radius: $borderRadius;
+	-webkit-box-shadow: 0 2px 2px -2px #222;
+	-moz-box-shadow: 0 2px 2px -2px #222;
+	box-shadow: 0 2px 2px -2px #222;
+	margin-bottom: 4px;
+    padding: 0px;
+	z-index: 9999;
+}
+.alert-box {
+	display: block;
+	position: relative;
+    color: inherit;
+    border-radius: $borderRadius;
+    font: 1.15em/1em $fontApp;
+	text-align: center;
+	margin: 0px;
+    padding: 8px;
+}
+.notify-fix {
+	display: table;
+	position: fixed;
+    /* center the element */
+	top: 5%;
+    right: 0;
+    left: 0;
+    margin-right: auto;
+    margin-left: auto;
+    /* give it dimensions */
+    width: 680px;
+	height: 120px;
+	min-height: 120px;
+	vertical-align: middle;
+    color: inherit;
+    font: 1.15em/1em $fontApp;
+	text-align: center;
+	border-radius: $borderRadius;
+	-webkit-box-shadow: 0 2px 2px -2px #222;
+	-moz-box-shadow: 0 2px 2px -2px #222;
+	box-shadow: 0 2px 2px -2px #222;
+    padding: 4px;
+	z-index: 9999;
+	cursor: pointer;
+}
+.alert-box-fix {
+	display: table;
+	position: fixed;
+    /* center the element */
+	top: 5%;
+    right: 0;
+    left: 0;
+    margin-right: auto;
+    margin-left: auto;
+    /* give it dimensions */
+    width: 680px;
+	height: 120px;
+	min-height: 120px;
+	vertical-align: middle;
+	background-clip: padding-box;
+	background-image: url(../images/notifyBk.jpg);
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+    color: inherit;
+    font: 1.25em/1em $fontApp;
+	text-align: center;
+	border-radius: $borderRadius;
+	-webkit-box-shadow: 0 2px 2px -2px #222;
+	-moz-box-shadow: 0 2px 2px -2px #222;
+	box-shadow: 0 2px 2px -2px #222;
+    padding: 4px;
+	z-index: 9999;
+	cursor: pointer;
+	.icon {
+		/* font: 2.15em/1em $fontIcon; */
+	}
+}
+.alert-box-fix-icon {
+	
+}
+.alert-box span {
+}
+.alert-box-fix span, notify-fix span {
+	display: table-cell;
+	vertical-align: middle;
+}
+
+.warning {
+	background-color: lighten($colorWarning, 12);
+	color: darken($colorWarning, 25);
+    border: 1px solid lighten($colorWarning, 6);
+}
+.success {
+    background-color: lighten($colorSuccess, 6);
+	color: darken($colorSuccess, 25);
+    border: 1px solid lighten($colorSuccess, 6);
+}
+.alert {
+    background-color: lighten($colorAlert, 12);
+	color: darken($colorAlert, 25);
+    border: 1px solid lighten($colorAlert, 6);
+}
+.info {
+    background-color: lighten($colorInfo, 12);
+	color: darken($colorInfo, 25);
+    border: 1px solid lighten($colorInfo, 6);
+}

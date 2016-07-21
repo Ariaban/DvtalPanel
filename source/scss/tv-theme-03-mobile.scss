@@ -1,0 +1,274 @@
+/* UI/UX: RohanIT.ir */
+/* طراحی رابط و تجربه کاربری فن آوری اطلاعات روهان */
+@charset "utf-8";
+@import "tv";
+
+$fontApp : $fontMirza;
+
+$bkUrlTVCPreview : '';
+body.tvcPre:before {
+	width: 100%;
+    height: 100%;
+	content: "";
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	display: block;
+
+    background-color: #000000;
+	background-image: url($bkUrlTVCPreview);
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+
+	-webkit-filter: blur(0px) grayscale(0%);
+	-moz-filter: blur(0px) grayscale(0%);
+	-o-filter: blur(0px) grayscale(0%);
+	-ms-filter: blur(0px) grayscale(0%);
+	filter: blur(0px) grayscale(0%);
+
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+	filter: alpha(opacity=0);
+	-moz-opacity: 0;
+	-khtml-opacity: 0;
+	opacity: 0;
+	z-index: -1;
+    margin: 0;
+	padding: 0;
+    overflow: hidden;
+}
+body.tvcPre {
+	width: 1920px !important;
+    min-width: 1920px !important;
+    max-width: 1920px !important;
+    height: 1080px !important;
+    min-height: 1080px !important;
+    max-height: 1080px !important;
+    background-color: #000000;
+	color: $colorWhite1;
+	font: 0.625em/1em $fontApp;
+	font-weight: normal;
+	line-height: 1.75 !important;
+	letter-spacing: 0;
+	margin: 0;
+	padding: 0;
+    overflow: hidden;
+}
+
+a {
+    background-color: $color1;
+    color: $color1Bk;
+    text-decoration: none;
+    padding: 0px 4px;
+    @include transition(all 0.15s ease);
+    &:hover {
+        background-color: $color1Bk;
+        color: $color1;
+        cursor: pointer;
+    }
+}
+a[disabled] {
+    pointer-events: none;
+}
+
+a {
+	background-color: $color1;
+	color: lighten($color1, 45);
+	text-decoration: none;
+	@include transition(all 0.15s ease);
+	&:hover {
+		background-color: $color2;
+		color: lighten($color2, 45);
+		cursor: pointer;
+	}
+}
+
+$gray : #D0D0D0;
+$dark-blue:#1D1D3F;
+
+
+$gray : #D0D0D0;
+$dark-blue:#1D1D3F;
+@font-face {
+	font-family: 'WMitraBold';
+	src :url(../fonts/WebMitraBold.eot);
+	src :url(../fonts/WebMitraBoldd41d.eot?#iefix) format('embedded-opentype'),
+		 url(../fonts/WebMitraBold.woff) format('woff'),
+		 url(../fonts/WebMitraBold.ttf) format('trutype'),
+		 url(../fonts/WebMitraBold.svg#WebMitraBold) format('svg');
+	font-weight: bold;
+	font-style: normal;
+	unicode-range :U+0600-06FF;
+}
+html, body {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	text-align: center;
+	direction: rtl;
+}
+
+.container{
+  width: 1920px;
+  height: 1080px;
+  overflow:hidden;
+  align-items: center;
+  text-align: center;
+  font-family:WMitraBold;
+  background-image: url();
+  color: #FFF;
+  }
+
+	.view-mobile{
+		width: 400px;
+        text-align: center;
+		margin:auto;
+        img{
+        width: 400px;
+    }
+	}
+	.container-mobile{
+		width: 400px;
+		background: #fff;
+	}
+.header{
+	background: #d9b451;
+    font-size: 34px;
+	padding: 10px;
+	margin-bottom: 10px;
+	margin-top: 5px;
+}
+.mobile-ads{
+    width:400px;
+    min-width:400px;
+    max-width:400px;
+    height:217px;
+    min-height:217px;
+    max-height:217px;
+}
+
+.widgetSlider{
+     width:400px;
+    min-width:400px;
+    max-width:400px;
+    height:217px;
+    min-height:217px;
+    max-height:217px;
+}
+#slider{
+     width:400px;
+    min-width:400px;
+    max-width:400px;
+    height:217px;
+    min-height:217px;
+    max-height:217px;
+    margin:0px;padding:0px;
+    li{
+        width:400px;
+        min-width:400px;
+        max-width:400px;
+        height:217px;
+        min-height:217px;
+        max-height:217px;
+        margin:0px;
+    }
+}
+.mobile-ads-txt{
+    width: 100%;
+    height: 65px;
+    background: #4d82a4 url(../images/bg-txt.png);
+    .widgetText {
+    position: relative;
+    width: 100%;
+    min-width: 100%;
+    max-width: 100%;
+    height: 100%;
+    min-height: 100%;
+    max-height: 100%;
+    background-color: transparent;
+    color: #FFFFFF;
+    font: 40px;
+
+    margin: 0px;
+    padding: 0px;
+    overflow: hidden;
+    .marquee {
+    position: relative;
+    width: 100%;
+    min-width: 100%;
+    max-width: 100%;
+    height: 100%;
+    min-height: 100%;
+    max-height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow: hidden;
+}
+}
+}
+
+.widgetText {
+    position: relative;
+    width: 100%;
+    min-width: 100%;
+    max-width: 100%;
+    height: 100%;
+    min-height: 100%;
+    max-height: 100%;
+    background-color: transparent;
+    color: #FFFFFF;
+    font: 100% Mirza, Tahoma, Verdana, Geneva, sans-serif, uicon;
+    margin: 0px;
+    padding: 0px;
+    overflow: hidden;
+}
+ul.marquee {
+    display: block;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    line-height: 1;
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 80px;
+    text-align: center;
+    background-color: transparent;
+    margin: 0px auto;
+}
+
+ul.marquee li {
+    position: absolute;
+    top: -999em;
+    right: 0;
+    display: block;
+    white-space: nowrap;
+    font: 140% Mirza, Tahoma, Verdana, Geneva, sans-serif, uicon;
+    text-align: center;
+    margin: 0px;
+    padding: 0px;
+    padding-top: 10px;
+}
+
+.change {
+    float: right;
+    width: 200px;
+    height: 90px;
+    padding: 10px;
+    
+    a.bottom {
+        width: 120px;
+        height: 34px;
+        line-height: 34px;
+        vertical-align: middle;
+        font-size: 17px;
+        margin: auto;
+        margin-top: 20px;
+        padding: 10px;
+        overflow: hidden;
+    }
+}
+
+
+

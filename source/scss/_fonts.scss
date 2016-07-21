@@ -1,0 +1,123 @@
+/* UI/UX: RohanIT.ir */
+/* طراحی رابط و تجربه کاربری فن آوری اطلاعات روهان */
+@charset "utf-8";
+@font-face {
+	font-family: Mirza;
+	src: url('../fonts/Mirza.woff?v=1.4.4') format('woff'),
+		 url('../fonts/Mirza.ttf?v=1.4.4') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+	letter-spacing: 0px;
+}
+@font-face {
+	font-family: Mirza;
+	src: url('../fonts/Mirza-Bold.woff?v=1.4.4') format('woff'),
+		 url('../fonts/Mirza-Bold.ttf?v=1.4.4') format('truetype');
+	font-weight: bold;
+}
+@font-face {
+	font-family: Nassim;
+	src: url('../fonts/nassim-bold.eot?#iefix') format('eot'),
+		url('../fonts/nassim-bold.woff') format('woff'),
+		url('../fonts/nassim-bold.ttf') format('truetype');
+	font-weight: bold; 
+}
+@font-face {
+	font-family: Nassim;
+	src: url('../fonts/nassim-regular.eot?#iefix') format('eot'),
+		url('../fonts/nassim-regular.woff') format('woff'),
+		url('../fonts/nassim-regular.ttf') format('truetype');
+	font-weight: normal; 
+	font-style: normal;
+	letter-spacing: 0px;
+}
+@font-face {
+	font-family: Nazanin;
+	src: url('../fonts/BNazanin.eot?#iefix') format('eot'),
+		url('../fonts/BNazanin.woff') format('woff'),
+		url('../fonts/BNazanin.ttf') format('truetype');
+	font-weight: normal; 
+	font-style: normal;
+	letter-spacing: 0px;
+}
+@font-face {
+	font-family: irSerif;
+	src: url('../fonts/IranianSerif.eot'); 
+	src: url('../fonts/IranianSerif.eot?#iefix') format('embedded-opentype'), 
+        url('../fonts/IranianSerif.woff') format('woff'),
+        url('../fonts/IranianSerif.ttf') format('truetype'), 
+        url('../fonts/IranianSerif.svg#IranianSerif') format('svg');
+	font-weight: normal; 
+	font-style: normal;
+	letter-spacing: 0px;
+}
+@font-face {
+	font-family: Roya;
+	src: url('../fonts/BRoya.eot'); 
+	src: url('../fonts/BRoya.eot?#iefix') format('embedded-opentype'), 
+        url('../fonts/BRoya.woff') format('woff'),
+        url('../fonts/BRoya.ttf') format('truetype');
+	font-weight: normal; 
+	font-style: normal;
+	letter-spacing: 0px;
+}
+@font-face {
+	font-family: irCompset;
+	src: url('../fonts/BCompset.eot'); 
+	src: url('../fonts/BCompset.eot?#iefix') format('embedded-opentype'), 
+        url('../fonts/BCompset.woff') format('woff'),
+        url('../fonts/BCompset.ttf') format('truetype');
+	font-weight: normal; 
+	font-style: normal;
+	letter-spacing: 0px;
+}
+@font-face {
+	font-family: Mitra;
+	src: url('../fonts/BMitra.eot'); 
+	src: url('../fonts/BMitra.eot?#iefix') format('embedded-opentype'), 
+        url('../fonts/BMitra.woff') format('woff'),
+        url('../fonts/BMitra.ttf') format('truetype');
+	font-weight: normal; 
+	font-style: normal;
+	letter-spacing: 0px;
+}
+@font-face {
+	font-family: Mitra;
+	src: url('../fonts/BMitraBd.eot'); 
+	src: url('../fonts/BMitraBd.eot?#iefix') format('embedded-opentype'), 
+        url('../fonts/BMitraBd.woff') format('woff'),
+        url('../fonts/BMitraBd.ttf') format('truetype');
+	font-style: bold;
+}
+@font-face {
+	font-family: Yekan;
+	src: url('../fonts/BYekan.eot'); 
+	src: url('../fonts/BYekan.eot?#iefix') format('embedded-opentype'), 
+        url('../fonts/BYekan.woff') format('woff'),
+        url('../fonts/BYEKAN.ttf') format('truetype'), 
+        url('../fonts/BYEKAN.svg#BYekan') format('svg');
+	font-weight: normal; 
+	font-style: normal;
+	letter-spacing: 0px;
+}
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+	@font-face {
+		font-family: Yekan;
+		src: url('../fonts/BYEKAN.svg#BYekan') format('svg');
+	}
+}
+/* Application Fonts */
+$fontDefault: Tahoma, Verdana, Geneva, sans-serif, uicon;
+$fontMirza: Mirza, Tahoma, Verdana, Geneva, sans-serif, uicon;
+$fontNassim: Nassim, Arial, Tahoma, Gadget, sans-serif, uicon;
+$fontSerif: irSerif, Arial, Tahoma, Gadget, sans-serif, uicon;
+$fontYekan: Yekan, Tahoma, Arial, Gadget, sans-serif, uicon;
+$fontRoya: Roya, Arial, Tahoma, Gadget, sans-serif, uicon;
+$fontCompset: irCompset, Arial, Tahoma, Gadget, sans-serif, uicon;
+$fontMitra: Mitra, Arial, Tahoma, Gadget, sans-serif, uicon;
+$fontNazanin: Nazanin, Arial, Tahoma, Gadget, sans-serif, uicon;
+$fontIcon: uicon, Tahoma, Verdana, Geneva, sans-serif;
+$fontGeorgia: Georgia,Utopia,Charter,serif;
+$fontApp : $fontMitra;
+$fontAppTitle : $fontYekan;
+$fontSize: 100%;

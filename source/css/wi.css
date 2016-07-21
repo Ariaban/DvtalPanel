@@ -1,0 +1,60 @@
+@charset "UTF-8";
+@font-face {
+    font-family: 'weather';
+    src: url('../fonts/artill_clean_icons-webfont.eot');
+    src: url('../fonts/artill_clean_icons-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/artill_clean_icons-webfont.woff') format('woff'),
+         url('../fonts/artill_clean_icons-webfont.ttf') format('truetype'),
+         url('../fonts/artill_clean_icons-webfont.svg#artill_clean_weather_iconsRg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.wi-0:before { content: ":"; }
+.wi-1:before { content: "p"; }
+.wi-2:before { content: "S"; }
+.wi-3:before { content: "Q"; }
+.wi-4:before { content: "S"; }
+.wi-5:before { content: "W"; }
+.wi-6:before { content: "W"; }
+.wi-7:before { content: "W"; }
+.wi-8:before { content: "W"; }
+.wi-9:before { content: "I"; }
+.wi-10:before { content: "W"; }
+.wi-11:before { content: "I"; }
+.wi-12:before { content: "I"; }
+.wi-13:before { content: "I"; }
+.wi-14:before { content: "I"; }
+.wi-15:before { content: "W"; }
+.wi-16:before { content: "I"; }
+.wi-17:before { content: "W"; }
+.wi-18:before { content: "U"; }
+.wi-19:before { content: "Z"; }
+.wi-20:before { content: "Z"; }
+.wi-21:before { content: "Z"; }
+.wi-22:before { content: "Z"; }
+.wi-23:before { content: "Z"; }
+.wi-24:before { content: "E"; }
+.wi-25:before { content: "E"; }
+.wi-26:before { content: "3"; }
+.wi-27:before { content: "a"; }
+.wi-28:before { content: "A"; }
+.wi-29:before { content: "a"; }
+.wi-30:before { content: "A"; }
+.wi-31:before { content: "6"; }
+.wi-32:before { content: "1"; }
+.wi-33:before { content: "6"; }
+.wi-34:before { content: "1"; }
+.wi-35:before { content: "W"; }
+.wi-36:before { content: "1"; }
+.wi-37:before { content: "S"; }
+.wi-38:before { content: "S"; }
+.wi-39:before { content: "S"; }
+.wi-40:before { content: "M"; }
+.wi-41:before { content: "W"; }
+.wi-42:before { content: "I"; }
+.wi-43:before { content: "W"; }
+.wi-44:before { content: "a"; }
+.wi-45:before { content: "S"; }
+.wi-46:before { content: "U"; }
+.wi-47:before { content: "S"; }

@@ -1,0 +1,178 @@
+/* UI/UX: RohanIT.ir */
+/* طراحی رابط و تجربه کاربری فن آوری اطلاعات روهان */
+/* http://www.color-hex.com/color-names.html */
+@charset "utf-8";
+
+$fontColorApp: #9CDCF9;
+$fontColorAppD1: darken($fontColorApp, 5);
+$fontColorAppD2: darken($fontColorApp, 15);
+$fontColorApp1: #53B7E8;
+$fontColorApp2: #42A2DA;
+$fontColorApp3: #1D88C9;
+$fontColorApp4: #2C67B2;
+$fontColorApp5: #315585;
+
+$colorBlue: #53B7E8;
+$colorBlueD1: #42A2DA;
+$colorBlueD2: #1D88C9;
+$colorBlueD3: #2C67B2;
+$colorBlueD4: #315585;
+
+$colorBlueL1: lighten($colorBlue, 5);
+$colorBlueL2: lighten($colorBlue, 15);
+$colorBlueL3: lighten($colorBlue, 25);
+$colorBlueL4: lighten($colorBlue, 35);
+
+$bkColorDark: #444444;
+$backgroundColor: #315585;
+$topBar: #F8F8F8;
+$topBarTxt: #888888;
+$pageHeaderBk: #E7E7E7;
+$formInputBk: #F8F8F8;
+$borderRadius: 4px;
+$borderRadiusBtn: 3px;
+
+$btnColorBK: #666666;
+$btnColorTxt: #FFFFFF;
+
+/* Application Colors */
+
+$color1: #D9B451;
+$color1Bk: lighten($color1, 35);
+$color1Bk1: lighten($color1, 30);
+$color1Bk2: lighten($color1, 25);
+$color1Bk3: lighten($color1, 15);
+$color1Bk4: lighten($color1, 5);
+
+$color1D5: darken($color1, 35);
+$color1D4: darken($color1, 30);
+$color1D3: darken($color1, 25);
+$color1D2: darken($color1, 15);
+$color1D1: darken($color1, 5);
+
+// $color1: #0068C0;
+// $color1Bk: lighten($color1, 45);
+
+// $color1: #666666;
+// $color1Bk: lighten($color1, 45);
+
+// $color1: #905F8B;
+// $color1Bk: lighten($color1, 40);
+
+// $color1: #5774AD;
+// $color1Bk: #D3DBF1;
+
+$fontColorDefault: #555555;
+
+$colorFontDefault: #555555;
+$colorFontDefaultL1: lighten($colorFontDefault, 5);
+$colorFontDefaultL2: lighten($colorFontDefault, 10);
+$colorFontDefaultL3: lighten($colorFontDefault, 20);
+
+$fontColor: $color1;
+$fontColor1: lighten($color1, 15);
+
+$color2: #2F5487;
+$color2Bk: lighten($color2, 5);
+$color2Bk1: lighten($color2, 10);
+$color2Bk2: lighten($color2, 15);
+$color2Bk3: lighten($color2, 25);
+$color2Bk4: lighten($color2, 35);
+
+$color2D: darken($color2, 5);
+$color2D1: darken($color2, 15);
+$color2D2: darken($color2, 25);
+$color2D3: darken($color2, 30);
+$color2D4: darken($color2, 35);
+
+// $color2: #AC4D81;
+// $color2Bk: lighten(#E27D9C, 15);
+$color3: #BA4980;
+$color3Bk: lighten(#E7839A, 20);
+$color4: #EB5D47;
+$color5: #AEB46D;
+
+$colorPlan: #3CA1DC;
+$colorPlanA: #9867E3;
+$colorPlanAD: darken(#F0E4F4, 20);
+$colorPlanB: #876BF0;
+$colorPlanBD: darken(#F5ECF9, 20);
+$colorPlanC: #6084E3;
+$colorPlanCD: darken(#E5E8F2, 20);
+
+$color6: #268E8B;
+$color7: #3CB19B;
+$color7D1: darken($color7, 8);
+$color7D2: darken($color7, 16);
+$color8: #FCCF4D;
+$color8TxtDark: #555555;
+$color9: #F9B02C;
+
+$color10: #4F94CD;
+$color10Bk: lighten($color10, 30);;
+
+/* Application Colors 4 Taradod SetA SteelBlue */
+/*$color1: #4F94CD;*/ 
+
+/* Application Colors 4 Taradod SetB plum */
+/*$color1: #B887B8;*/
+
+/* Application Colors 4 Taradod SetC PaleGreen */
+/*$color1: #6FB86F;*/
+
+/* Application Colors 4 Taradod SetD SeaShell */
+/*$color1: #8B8682;*/
+
+/* Application Colors 4 Taradod SetE MistyRose */
+/*$color1: #B8A4A2;*/
+
+/* Application Colors 4 Taradod SetF LightYellow */
+/*$color1: #A4A490;*/
+
+/* Application Colors 4 Taradod SetB Table & Grid */
+$colorGridFilterField: lighten($color1, 25);
+$colorGridRowA: lighten($color1, 27);
+$colorGridRowB: lighten($color1, 33);
+$colorGridRowHover: lighten($color1, 20);
+$colorGridRowSelect: #434A54;
+/* Application Colors 4 Foundation Default */
+$primary-color: $color1;
+$colorBarTop: $topBar;
+
+$colorAlert: #FFCE54;
+$colorAlertLight: lighten($colorAlert, 20);
+$colorAlertDark: darken($colorAlert, 20);
+$colorAlertTxt: darken($colorAlert, 35);
+$colorInfo: #4FC0E9;
+$colorSuccess: #A0D368;
+$colorSuccessTxt: lighten($colorSuccess, 30);
+$colorSuccessD: darken($colorSuccess, 5);
+$colorSuccessD1: darken($colorSuccess, 15);
+$colorSuccessFont: #DCFFA9;
+$colorWarning: #EB5367;
+$colorWarningTxtL1: lighten($colorWarning, 5);
+$colorWarningTxt: lighten($colorWarning, 25);
+$colorDark: #656D78;
+$colorGray: #CCD1D9;
+$colorGrayDark: #AAB2BE; /* darken($gray, 8) */
+$colorGrayLight: #E6E9ED; /* lighten($gray, 8) */
+$colorCoated663C: #EEEEEE;
+$colorGrayCoatedCool1C: #E6E6E6;
+$colorGrayCoatedCool1CTemp: #DDDDDD;
+$colorGrayCoatedCool3C: #C4C4C4;
+$colorGrayCoatedCool3CTemp: #CCCCCC;
+$colorGrayCoatedCool7C: #999999;
+$colorGrayCoatedCool8C: #888888;
+$colorGrayCoatedCool9C: #666666;
+$colorBlackCoated7C: #444444;
+$colorWhite: #FFFFFF;
+$colorWhite1: #F1F1F1;
+$colorBrown: #9F611D;
+$colorBrownDark: #E3C583;
+$colorBrownLight: lighten($colorBrown, 10);
+
+$folderBk: #F4EDD8;
+$folderTxt: #C79500;
+$folderTxtDark: darken($folderBk, 15);
+$folderTxtLight: lighten($folderTxt, 15);
+

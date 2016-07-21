@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="fa">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>سامانه مدیریت و پخش دی وی تال</title>
+
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link href="logo.png" rel="icon" type="image/png">
+
+    <link href="../css/uicon.css" rel="stylesheet" type="text/css">
+    <link href="../css/tv-theme-04.css" media="screen, projection" rel="stylesheet" type="text/css" />
+    <link href="../css/wi.css" rel="stylesheet" type="text/css">
+    
+    <!--[if lt IE 8]>
+      <link href="css/ie.css" media="screen, projection" rel="stylesheet" type="text/css" />
+    <![endif]-->
+    
+    <script src="../js/jquery.js"></script>
+    <script src="../js/Modernizr.js"></script>
+    
+    <script src="../js/jquery.resizeimagetoparent.js"></script>
+    <script src="../js/pdate.min.js"></script>
+    <script src="../js/datePersian.js"></script>
+    <script src="../js/jquery.simpleWeather.js"></script>
+    <script src="../js/rhinoslider-1.05.js"></script>
+    <script src="../js/jquery.marquee.js"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function(){
+            changeEffect('transfer');
+        });
+    </script>
+
+</head>
+<body class="tvcPre">
+	<div class="container">
+        <div class="view-kiusk"> 
+           <div class="section1-them04-view">
+                <div class="time-them04-view">
+                     <div class="widgetTimeDate">
+                        <div id="show_time_1" class="txtTime">17:11
+                        </div>
+                        <div id="date" class="txtDate">سه شنبه 22 تير</div>
+                        <script>
+                            $(document).ready(function() {
+                                var _date = showdate();
+                                $("#date").text(_date);
+                            });
+                        </script>
+                    </div>
+                </div>
+                <div class="content-them04">
+                    <div class="main-sales">
+                        <div class="head-sale">
+                            <div class="back-row">
+                                <a href="">
+                                    
+                                    بازگشت
+                                    <span class="icon" data-icon="&#xe050;"></span>
+                                </a>
+                            </div>
+                            <div class="row-Description">
+                                <div class="pic-sale">
+                                    <img width="139" src="../images/pic1-s.png">
+                                </div>
+                                <div class="Description-sale">
+                                    <h2>تین پوش</h2>
+                                    <p>تا پایان 10 خرداد تمام محصولات شامل 20%  تخفیف می باشد </p>
+                                    <p class="address">
+                                        طبقه 1ول-پلاک 100 - فروشگاه تین پوش 
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="info-sale">
+                        <ul class="tab">
+                          <li> <a href="#" class="tablinks active" onclick="openCity(event, 'اطلاعات فروشگاه')" >
+                              <div class="icon" data-icon="&#xe07a;"></div> اطلاعات فروشگاه 
+                              </a> </li>
+                            <li> <a href="#" class="tablinks" onclick="openCity(event, 'علاقه مندی')" >
+                              <div class="icon" data-icon="&#xe322;"></div> علاقه مندی
+                              </a> </li>
+                            <li> <a href="#" class="tablinks" onclick="openCity(event, 'نقشه')" >
+                              <div class="icon" data-icon="&#xe0ad;"></div> نقشه
+                              </a> </li>
+                            
+                        </ul>  
+                        </div>
+                        <div class="info-sale-content">
+                         <div id="اطلاعات فروشگاه" class="tabcontent tabcontent-main active" style="display: block;" >
+                         <p><span class="icon" data-icon="&#xe086;"></span>پوشاک</p>
+                          <p><span class="icon" data-icon="&#xe03a;"></span>21:00-9:00</p>
+                          <p><span class="icon" data-icon="&#xe0b2;"></span>02144448565</p>
+                          <p><span class="icon" data-icon="&#xe09d;"></span>www.tin-poosh.com</p>
+                          <p><span class="icon" data-icon="&#xe36b;"></span>info@web.com</p>
+                          <p>فروشگاه شامل انواع لباس های راحتی - شومیزهای دخترانه - پیراهن های دخترانه و  لباس های پسرانه ی راحتی - لباس های پسرانه اسپورت - - لباس های پسرانه رسمی می باشد </p>
+                        </div>
+
+                        <div id="علاقه مندی" class="tabcontent ">
+                          
+                        </div>
+
+                        <div id="نقشه" class="tabcontent">
+                          <img src="../images/mapDetails.png">
+                        </div>
+                        <script type="text/javascript">
+                            function openCity(evt, cityName) {
+                            // Declare all variables
+                            var i, tabcontent, tablinks;
+
+                            // Get all elements with class="tabcontent" and hide them
+                            tabcontent = document.getElementsByClassName("tabcontent");
+                            for (i = 0; i < tabcontent.length; i++) {
+                                tabcontent[i].style.display = "none";
+                            }
+
+                            // Get all elements with class="tablinks" and remove the class "active"
+                            tablinks = document.getElementsByClassName("tablinks");
+                            for (i = 0; i < tablinks.length; i++) {
+                                tablinks[i].className = tablinks[i].className.replace(" active", "");
+                            }
+
+                            // Show the current tab, and add an "active" class to the link that opened the tab
+                            document.getElementById(cityName).style.display = "block";
+                            evt.currentTarget.className += " active";
+                        }
+                        </script>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="section2-them04-view">
+                <div class="slider-them04-view">
+                    <div class="widgetSlider">
+                        <ul id="slider">
+                            <li><img src='../slide/slide1.png' width="1080" height="495" ></li>
+                            <li><img src='../slide/slide2.png' width="1080" height="495" ></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="ads-txt-them04-view">
+                     <div class="widgetText">
+                            <ul id="marquee" class="marquee">
+                                <li>چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است</li>
+
+                            </ul>
+                            
+                            <script>
+                                $(document).ready(function (){
+                                      $("#marquee").marquee({yScroll: "bottom"});
+                                });
+                            </script>                  
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

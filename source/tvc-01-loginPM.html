@@ -1,0 +1,213 @@
+<!doctype html>
+<html lang="fa">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>سامانه مدیریت و پخش دی وی تال</title>
+    
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link href="logo.png" rel="icon" type="image/png">
+
+    <link href="css/uicon.css" rel="stylesheet" type="text/css">
+    <link href="css/screen.css" media="screen, projection" rel="stylesheet" type="text/css" />
+    <link href="css/print.css" media="print" rel="stylesheet" type="text/css" />
+    <!--[if lt IE 8]>
+      <link href="css/ie.css" media="screen, projection" rel="stylesheet" type="text/css" />
+    <![endif]-->
+    <!-- <script src="../bower_components/jquery/dist/jquery.js"></script> -->
+    <script src="js/jquery.js"></script>
+    <!-- <script src="../bower_components/modernizr/src/Modernizr.js"></script> -->
+    <script src="js/modernizr.custom.63321.js"></script>
+    <!-- <script src="js/jquery.js"></script> -->
+    
+    <script src="scripts/tooltip.js"></script>
+    
+</head>
+<body class="tvc loginPage">
+
+<notify> <!-- notify place show -->
+</notify> <!-- /notify place show -->
+ 
+<notify-fix> <!-- notify-fix place show -->
+</notify-fix> <!-- /notify-fix place show -->
+
+<div class="limit">
+    <div class="row block">
+
+        <div class="col12 blockHeader">
+
+            <div class="row headerBK">
+                <div class="col4">
+                </div>
+                <div class="col4 headerLogoPlace">
+                    <img class="logoDivital" src="images/logo-divital.svg" alt="DIVITAL Control Panel">
+                </div>
+                <div class="col4">
+                </div>
+            </div>
+
+        </div>
+        
+    </div>
+</div>
+    
+<div class="limit">
+	<div class="row block">
+        
+    	<div class="col12 blockLloginType">
+            
+            <div class="blockLoginPlace" id="panelToggleLogin" style="display: block;">
+                
+                <div class="row">
+                    <div class="col12">
+
+                        <div class="row blockLoginPM pmDefault">
+                            <span class="pmTxt">
+                                نمایش پیام های مختلف مربوط با فرم <br>
+                                نمایش پیام های مختلف مربوط با فرم
+                            </span>
+                        </div>
+
+                    </div>
+                </div>
+                
+                <div class="row">
+                    <div class="col4">
+                    </div>
+                    <div class="col4">
+                        
+                        <div class="row itemSpace">
+                            <div class="col12">
+                                <a href="#" class="btnLogin">
+                                    <span class="icon" data-icon="&#xe04d;"></span>
+                                    <span class="txt">ورود</span>
+                                </a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                
+            </div>
+            
+            <div class="blockLoginPlace">
+                
+                <div class="row blockLoginPM pmAlert">
+                    <span class="icon" data-icon="&#xe015;"></span>
+                    <span class="pmTxt">نمایش پیام های مختلف مربوط با فرم</span>
+                </div>
+                
+                <div class="row blockLoginPM pmInfo">
+                    <span class="icon" data-icon="&#xe313;"></span>
+                    <span class="pmTxt">نمایش پیام های مختلف مربوط با فرم</span>
+                </div>
+                
+                <div class="row blockLoginPM pmSuccess">
+                    <span class="icon" data-icon="&#xe30e;"></span>
+                    <span class="pmTxt">نمایش پیام های مختلف مربوط با فرم</span>
+                </div>
+                
+                <div class="row blockLoginPM pmWarning">
+                    <span class="icon" data-icon="&#xe30f;"></span>
+                    <span class="pmTxt">نمایش پیام های مختلف مربوط با فرم</span>
+                </div>
+                
+            </div>
+            
+        </div>
+        
+    </div>
+    <div class="row block">
+    	<div class="col12 blockLFooterType">
+            تمامی حقوق محفوظ میباشد و متعلق به دی وی تال است.
+        </div>
+    </div>
+    
+    
+    <div class="row block itemSpaceSmall">
+        
+    	<div class="col12">
+            <div class="row">
+            	<script>
+					function notifyAlert() {
+						if(! $('.alert-box').length) {
+							$('<div class="alert-box alert" >نمایش پیام مورد نظر</div>').prependTo('notify').delay(1500).fadeOut(1000, function() {
+										$('.alert-box').remove();
+										});
+						};
+					};
+					function notifySuccess() {
+						if(! $('.alert-box').length) {
+							$('<div class="alert-box success" >نمایش پیام مورد نظر</div>').prependTo('notify').delay(1500).fadeOut(1000, function() {
+										$('.alert-box').remove();
+										});
+						};
+					};
+					function notifyWarning() {
+						if(! $('.alert-box').length) {
+							$('<div class="alert-box warning" >نمایش پیام مورد نظر</div>').prependTo('notify').delay(1500).fadeOut(1000, function() {
+										$('.alert-box').remove();
+										});
+						};
+					};
+					function notifyInfo() {
+						if(! $('.alert-box').length) {
+							$('<div class="alert-box info" >نمایش پیام مورد نظر</div>').prependTo('notify').delay(1500).fadeOut(1000, function() {
+										$('.alert-box').remove();
+										});
+						};
+					};
+					
+					function notifyFix() {
+						if(! $('.alert-box-fix').length) {
+							$('<div onClick="notifyFixClose()" class="alert-box-fix alert" ><span>نمایش پیام مورد نظر نمایش پیام مورد نظر</span>').prependTo('notify-fix');
+						};
+					};
+					
+					function notifyFixClose() {
+						if($('.alert-box-fix').length) {
+							$('.alert-box-fix').delay(30).fadeOut(1000, function() {$('.alert-box-fix').remove()});
+						};
+					};
+					
+				</script>
+                
+            	<div class="col1">
+                    <a href="#" onClick="notifyAlert()" class="btnIcon btnNotify">
+                        <span class="icon" data-icon="&#xe034;"></span>
+                    </a>
+                </div>
+                <div class="col1">
+                    <a href="#" onClick="notifySuccess()" class="btnIcon btnNotify">
+                        <span class="icon" data-icon="&#xe042;"></span>
+                    </a>
+                </div>
+                <div class="col1">
+                    <a href="#" onClick="notifyWarning()" class="btnIcon btnNotify">
+                        <span class="icon" data-icon="&#xe015;"></span>
+                    </a>
+                </div>
+                <div class="col1">
+                    <a href="#" onClick="notifyInfo()" class="btnIcon btnNotify">
+                        <span class="icon" data-icon="&#xe07a;"></span>
+                    </a>
+                </div>
+                <div class="col1">
+                    <a href="#" onClick="notifyFix()" class="btnIcon btnNotify">
+                        <span class="icon" data-icon="&#xe398;"></span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    
+           
+           
+        
+        </div>
+    
+    
+    
+</div>
+
+</body>
+</html>

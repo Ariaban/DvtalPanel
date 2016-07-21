@@ -1,0 +1,436 @@
+/* UI/UX: RohanIT.ir */
+/* طراحی رابط و تجربه کاربری فن آوری اطلاعات روهان */
+@charset "utf-8";
+@import "tv";
+
+$fontApp : $fontMirza;
+
+$bkUrlTVCPreview : '';
+body.tvcPre:before {
+	width: 100%;
+    height: 100%;
+	content: "";
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	display: block;
+
+    background-color: #000000;
+	background-image: url($bkUrlTVCPreview);
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+
+	-webkit-filter: blur(0px) grayscale(0%);
+	-moz-filter: blur(0px) grayscale(0%);
+	-o-filter: blur(0px) grayscale(0%);
+	-ms-filter: blur(0px) grayscale(0%);
+	filter: blur(0px) grayscale(0%);
+
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+	filter: alpha(opacity=0);
+	-moz-opacity: 0;
+	-khtml-opacity: 0;
+	opacity: 0;
+	z-index: -1;
+    margin: 0;
+	padding: 0;
+    overflow: hidden;
+}
+body.tvcPre {
+	width: 1920px !important;
+    min-width: 1920px !important;
+    max-width: 1920px !important;
+    height: 1080px !important;
+    min-height: 1080px !important;
+    max-height: 1080px !important;
+    background-color: #000000;
+	color: $colorWhite1;
+	font: 0.625em/1em $fontApp;
+	font-weight: normal;
+	line-height: 1.75 !important;
+	letter-spacing: 0;
+	margin: 0;
+	padding: 0;
+    overflow: hidden;
+}
+
+a {
+    background-color: $color1;
+    color: $color1Bk;
+    text-decoration: none;
+    padding: 0px 4px;
+    @include transition(all 0.15s ease);
+    &:hover {
+        background-color: $color1Bk;
+        color: $color1;
+        cursor: pointer;
+    }
+}
+a[disabled] {
+    pointer-events: none;
+}
+
+a {
+	background-color: $color1;
+	color: lighten($color1, 45);
+	text-decoration: none;
+	@include transition(all 0.15s ease);
+	&:hover {
+		background-color: $color2;
+		color: lighten($color2, 45);
+		cursor: pointer;
+	}
+}
+
+.fullHD {
+    display: block;
+    position: absolute;
+    width: 1920px !important;
+    min-width: 1920px !important;
+    max-width: 1920px !important;
+    height: 1080px !important;
+    min-height: 1080px !important;
+    max-height: 1080px !important;
+    text-align: center;
+    vertical-align: middle;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    margin: 0px auto;
+    padding: 0px;
+    overflow: hidden;
+}
+
+.rowA {
+    display: block;
+    position: relative;
+    width: 100%;
+    min-width: 100%;
+    height: 900px;
+    min-height: 900px;
+    max-height: 900px;
+    margin: 0px;
+    padding: 0px;
+    clear: both;
+    overflow: hidden;
+}
+.rowB {
+    display: block;
+    position: relative;
+    width: 100%;
+    min-width: 100%;
+    height: 180px;
+    min-height: 180px;
+    max-height: 180px;
+    background-color: #000000;
+    background-image: url(../images/bkText.png);
+    background-size: auto;
+    background-position: center center;
+    background-repeat: no-repeat;
+    margin: 0px;
+    padding: 0px;
+    clear: both;
+    overflow: hidden;
+    .rowBEdit {
+        width: 100%;
+        height: 100%;
+        background-image: url();
+        background: #000000;
+        border: 1px dotted $colorGrayCoatedCool9C;
+        padding-top: 5px;
+        .menuTitle {
+            display: block;
+            color: $colorGrayCoatedCool9C;
+            font: $fontSize*1.2 $fontYekan;
+            font-weight: 600;
+        }
+        .menuEdit {
+            display: none;
+            width: 300px;
+            text-align: center;
+            margin: 0px auto;
+            right: -15px;
+            > a {
+                float: right;
+            }
+        }
+        &:hover {
+            background-color: #1A1A1A;
+            border: 1px solid $colorSuccess;
+            cursor: pointer;
+
+            transition: all 0.35s ease;
+            -webkit-transition: all 0.35s ease;
+            -moz-transition: all 0.35s ease;
+            -o-transition: all 0.35s ease;
+
+            .menuTitle {
+                color: $colorSuccess;
+            }
+            .menuEdit {
+                display: block;
+                right: 0;
+            }
+        }
+    }
+}
+.colAA {
+    display: block;
+    position: relative;
+    width: 320px;
+    min-width: 320px;
+    max-width: 320px;
+    height: 900px;
+    min-height: 900px;
+    max-height: 900px;
+    margin: 0px;
+    padding: 0px;
+    float: right;
+    overflow: hidden;
+}
+.colAB {
+    display: block;
+    position: relative;
+    width: 1600px;
+    min-width: 1600px;
+    max-width: 1600px;
+    height: 900px;
+    min-height: 900px;
+    max-height: 900px;
+    margin: 0px;
+    padding: 0px;
+    float: left;
+    overflow: hidden;
+    .colABEdit {
+        width: 100%;
+        height: 100%;
+        border: 1px dotted $colorGrayCoatedCool9C;
+        padding-top: 5px;
+        .menuTitle {
+            display: block;
+            color: $colorGrayCoatedCool9C;
+            font: $fontSize*1.2 $fontYekan;
+            font-weight: 600;
+        }
+        .menuEdit {
+            display: none;
+            width: 300px;
+            text-align: center;
+            margin: 0px auto;
+            right: -15px;
+            > a {
+                float: right;
+            }
+        }
+        &:hover {
+            background-color: #1A1A1A;
+            border: 1px solid $colorSuccess;
+            cursor: pointer;
+
+            transition: all 0.35s ease;
+            -webkit-transition: all 0.35s ease;
+            -moz-transition: all 0.35s ease;
+            -o-transition: all 0.35s ease;
+
+            .menuTitle {
+                color: $colorSuccess;
+            }
+            .menuEdit {
+                display: block;
+                right: 0;
+            }
+        }
+    }
+}
+.colAArowA {
+    display: block;
+    position: relative;
+    width: 320px;
+    min-width: 320px;
+    max-width: 320px;
+    height: 300px;
+    min-height: 300px;
+    max-height: 300px;
+    margin: 0px;
+    padding: 0px;
+    clear: both;
+    overflow: hidden;
+    .colAArowAEdit {
+        width: 100%;
+        height: 100%;
+        border: 1px dotted $colorGrayCoatedCool9C;
+        padding-top: 5px;
+        .menuTitle {
+            display: block;
+            color: $colorGrayCoatedCool9C;
+            font: $fontSize*1.2 $fontYekan;
+            font-weight: 600;
+        }
+        .menuEdit {
+            display: none;
+            width: 300px;
+            text-align: center;
+            margin: 0px auto;
+            right: -15px;
+            > a {
+                float: right;
+            }
+        }
+        &:hover {
+            background-color: #1A1A1A;
+            border: 1px solid $colorSuccess;
+            cursor: pointer;
+
+            transition: all 0.35s ease;
+            -webkit-transition: all 0.35s ease;
+            -moz-transition: all 0.35s ease;
+            -o-transition: all 0.35s ease;
+
+            .menuTitle {
+                color: $colorSuccess;
+            }
+            .menuEdit {
+                display: block;
+                right: 0;
+            }
+        }
+    }
+}
+.colAArowB {
+    display: block;
+    position: relative;
+    width: 320px;
+    min-width: 320px;
+    max-width: 320px;
+    height: 300px;
+    min-height: 300px;
+    max-height: 300px;
+    margin: 0px;
+    padding: 0px;
+    clear: both;
+    overflow: hidden;
+    .colAArowBEdit {
+        width: 100%;
+        height: 100%;
+        border: 1px dotted $colorGrayCoatedCool9C;
+        padding-top: 5px;
+        .menuTitle {
+            display: block;
+            color: $colorGrayCoatedCool9C;
+            font: $fontSize*1.2 $fontYekan;
+            font-weight: 600;
+        }
+        .menuEdit {
+            display: none;
+            width: 300px;
+            text-align: center;
+            margin: 0px auto;
+            right: -15px;
+            > a {
+                float: right;
+            }
+        }
+        &:hover {
+            background-color: #1A1A1A;
+            border: 1px solid $colorSuccess;
+            cursor: pointer;
+
+            transition: all 0.35s ease;
+            -webkit-transition: all 0.35s ease;
+            -moz-transition: all 0.35s ease;
+            -o-transition: all 0.35s ease;
+
+            .menuTitle {
+                color: $colorSuccess;
+            }
+            .menuEdit {
+                display: block;
+                right: 0;
+            }
+        }
+    }
+}
+.colAArowC {
+    display: block;
+    position: relative;
+    width: 320px;
+    min-width: 320px;
+    max-width: 320px;
+    height: 300px;
+    min-height: 300px;
+    max-height: 300px;
+    text-align: center;
+    margin: 0px;
+    padding: 0px;
+    clear: both;
+    overflow: hidden;
+    .colAArowCEdit {
+        width: 100%;
+        height: 100%;
+        border: 1px dotted $colorGrayCoatedCool9C;
+        padding-top: 5px;
+
+        .menuTitle {
+            display: block;
+            color: $colorGrayCoatedCool9C;
+            font: $fontSize*1.2 $fontYekan;
+            font-weight: 600;
+        }
+        .menuEdit {
+            display: none;
+            position: relative;
+            width: 300px;
+            text-align: center;
+            margin: 0px auto;
+            padding: 0px;
+            padding-top: -35px;
+
+            > a {
+                float: right;
+            }
+        }
+        &:hover {
+            background-color: #1A1A1A;
+            border: 1px solid $colorSuccess;
+            cursor: pointer;
+
+            transition: all 0.35s ease;
+            -webkit-transition: all 0.35s ease;
+            -moz-transition: all 0.35s ease;
+            -o-transition: all 0.35s ease;
+
+            .menuTitle {
+                color: $colorSuccess;
+            }
+            .menuEdit {
+                display: block;
+                padding-top: 5px;
+
+                transition: all 0.25s ease;
+                -webkit-transition: all 0.25s ease;
+                -moz-transition: all 0.25s ease;
+                -o-transition: all 0.25s ease;
+
+            }
+        }
+    }
+}
+
+
+
+ul.marquee li {
+    color: #F1F1F1;
+    padding: 0px;
+    margin: 0px;
+    font-size: 64px;
+    padding-top: 35px;
+}
+
+
+
+
+
+

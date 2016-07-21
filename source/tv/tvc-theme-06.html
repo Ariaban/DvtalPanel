@@ -1,0 +1,232 @@
+<!doctype html>
+<html lang="fa">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>سامانه مدیریت و پخش دی وی تال</title>
+
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link href="logo.png" rel="icon" type="image/png">
+
+    <link href="../css/uicon.css" rel="stylesheet" type="text/css">
+    <link href="../css/tv-theme-06.css" media="screen, projection" rel="stylesheet" type="text/css" />
+    <link href="../css/wi.css" rel="stylesheet" type="text/css">
+    
+    <!--[if lt IE 8]>
+      <link href="css/ie.css" media="screen, projection" rel="stylesheet" type="text/css" />
+    <![endif]-->
+    
+    <script src="../js/jquery.js"></script>
+    <script src="../js/Modernizr.js"></script>
+    
+    <script src="../js/jquery.resizeimagetoparent.js"></script>
+    <script src="../js/pdate.min.js"></script>
+    <script src="../js/datePersian.js"></script>
+    <script src="../js/jquery.simpleWeather.js"></script>
+    <script src="../js/rhinoslider-1.05.js"></script>
+    <script src="../js/jquery.marquee.js"></script>
+    <script src="../js/jquery.transit.min.js"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function(){
+            changeEffect('transfer');
+        });
+    </script>
+
+</head>
+<body class="tvcPre">
+
+<div class="fullHD Vertical"> <!-- fullHD Vertical day night -->
+        
+    <div class="theme06Content day">
+        
+        <div class="theme06Sun">
+        </div>
+        <div class="theme06Moon">
+        </div>
+    
+        <div class="theme06Cloud">
+        </div>
+    
+        <div class="borboletas">
+          <div class="borboleta-1">
+            <div class="borboleta-oval-squish">
+              <div class="borboleta-oval">
+                <div class="borboleta-radial">
+                  <div class="borboleta-gfx">
+                    <div class="borboleta-anim"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="borboleta-2">
+            <div class="borboleta-oval-squish">
+              <div class="borboleta-oval">
+                <div class="borboleta-radial">
+                  <div class="borboleta-gfx">
+                    <div class="borboleta-anim"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    
+        <div class="theme06Logo">
+            <img src='../images/logo-dvtal-theme05-02.svg' width="240px" height="auto" >
+        </div>
+        <div class="theme06Weather">
+            <div class="widgetWeather weather">
+            </div>
+            <script>
+                // v3.1.0
+                //Docs at http://simpleweatherjs.com
+                $(document).ready(function() {
+                  $.simpleWeather({
+                    location: 'Tehran, IR',
+                    woeid: '',
+                    unit: 'c',
+                    success: function(weather) {
+                      html = '<div class="wi"><i class="wi-'+weather.code+'"></i></div><div><span class="cw">'+weather.temp+'</span><span class="cc">'+'&deg;'+weather.units.temp+'</span></div>';
+
+                      $(".weather").html(html);
+                    },
+                    error: function(error) {
+                      $(".weather").html('<p>'+error+'</p>');
+                    }
+                  });
+                });
+            </script>
+        </div>
+        <div class="theme06TimeDate">
+            <div class="widgetTimeDate">
+                <div id="show_time_1" class="txtTime">
+                    <script>
+                        function show_time_1(){
+                         d=new Date();
+                         H=d.getHours();H=(H<10)?"0"+H:H;
+                         i=d.getMinutes();i=(i<10)?"0"+i:i;
+                         s=d.getSeconds();s=(s<10)?"0"+s:s;
+                         document.getElementById('show_time_1').innerHTML=H+":"+i;
+                         setTimeout("show_time_1()",60000);/* 1 sec */
+                        } show_time_1();
+                    </script>
+                </div>
+                <div id="date" class="txtDate">
+                   <!-- <script>showdate();</script> -->
+                </div>
+                <script>
+                    $(document).ready(function() {
+                        var _date = showdate();
+                        $("#date").text(_date);
+                    });
+                </script>
+            </div>
+        </div>
+        <div class="theme06Video">
+            <div class="widgetVideo">
+                <video > <!-- <video autoplay loop> -->
+                    <source src="../video/SampleVideo_1280x720.webm" type='video/webm' >
+                    <source src="../video/SampleVideo_1280x720.mp4" type='video/mp4' >
+                </video>
+            </div>
+        </div>
+        <div class="theme06Slider01">
+            <div class="widgetSlider">
+                <ul id="slider">
+                    <li><img src='../slide/hm/hm01.png' width="613px" height="344px" ></li>
+                    <li><img src='../slide/hm/hm02.png' width="613px" height="344px" ></li>
+                    <li><img src='../slide/hm/hm03.png' width="613px" height="344px" ></li>
+                    <li><img src='../slide/hm/hm04.png' width="613px" height="344px" ></li>
+                    <li><img src='../slide/hm/hm05.png' width="613px" height="344px" ></li>
+                </ul>
+            </div>
+        </div>
+        <div class="theme06Marquee02">
+            <div class="widgetText">
+                <ul id="marquee02" class="marquee">
+                    <li>چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است</li>
+                </ul>
+
+                <script>
+                    $(document).ready(function (){
+                          $("#marquee02").marquee({yScroll: "bottom"});
+                    });
+                </script>
+            </div>
+        </div>
+        <div class="theme06Copyright">
+            <div class="copyrightTxt">
+                تمامی حقوق محفوظ میباشد و متعلق به دی وی تال است.
+            </div>
+        </div>
+        
+    
+    
+        <div class="theme06Loading">
+            <div class="loadingBk" style="width: 75%;"><div class="loadingTxt">3/5</div></div>
+        </div>
+    
+    
+    
+    </div> 
+    <div class="fullHDVerOver theme06Over"> <!-- fullHDVerOver -->
+    </div> <!-- /fullHDVerOver -->
+</div> <!-- /fullHD Vertical -->
+
+<script>
+    
+var pulseSun = function() {
+	$('.theme06Sun').transition({
+		scale: 1,
+		y: -65,
+		easing: 'ease',
+		duration: 12200
+	}).transition({
+		scale: 1,
+		y: 0,
+		easing: 'ease',
+		duration: 12200
+	}, pulseSun);
+};
+pulseSun();
+
+ var pulseMoon = function() {
+	$('.theme06Moon').transition({
+		scale: 1,
+		y: -55,
+		easing: 'ease',
+		duration: 10200
+	}).transition({
+		scale: 1,
+		y: 0,
+		easing: 'ease',
+		duration: 10200
+	}, pulseMoon);
+};
+pulseMoon();
+    
+var moveCloud = function() {
+	$('.theme06Cloud').transition({
+		scale: 1,
+		y: 0,
+        x: -1480,
+		easing: 'linear',
+		duration: 330200
+	}).transition({
+		scale: 1,
+		y: 0,
+        x: 0,
+		easing: 'linear',
+		duration: 1
+	}, moveCloud);
+};
+moveCloud();
+    
+</script>
+
+</body>
+</html>
+
+
