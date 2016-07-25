@@ -581,12 +581,20 @@ $fontWeather : weather;
         width: 100%;
         height: 100%;
         ul li img {
-            width: 960px;
-            height: 540px;
+            width: 960px !important;
+            height: 540px !important;
             overflow: hidden;
         }
     }
     
+}
+
+/*css-06*/
+
+.theme06Slider01 .widgetSlider ul li img {
+    width: 960px !important;
+    height: 540px !important;
+    overflow: hidden
 }
 .theme06Marquee02 {
     display: block;
