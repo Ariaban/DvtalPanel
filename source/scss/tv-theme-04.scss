@@ -310,8 +310,8 @@ ul.marquee li {
     font: 300% Mirza, Tahoma, Verdana, Geneva, sans-serif, uicon;
     text-align: center;
     margin: 0px;
-    padding: 0px;
-    padding-top: 30px;
+    padding: 30px 30px 0 30px;
+   
 }
 /*map*/
 
@@ -712,7 +712,7 @@ ul.marquee li {
                 margin: 20px 0;
                 line-height: 60px;
                 vertical-align: middle;
-                font: $fontSize*2.1 $fontMirza;
+                font: $fontSize*2.5 $fontMirza;
                 font-weight: 600;
             }
             p {
