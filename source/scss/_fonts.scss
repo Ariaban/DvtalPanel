@@ -106,9 +106,14 @@
 		src: url('../fonts/BYEKAN.svg#BYekan') format('svg');
 	}
 }
+@font-face {
+	font-family: Irsans;
+    src: url('../fonts/irsans.ttf') format('truetype'), 
+}
 /* Application Fonts */
 $fontDefault: Tahoma, Verdana, Geneva, sans-serif, uicon;
 $fontMirza: Mirza, Tahoma, Verdana, Geneva, sans-serif, uicon;
+$fontIrsans: Irsans, Tahoma, Verdana, Geneva, sans-serif, uicon;
 $fontNassim: Nassim, Arial, Tahoma, Gadget, sans-serif, uicon;
 $fontSerif: irSerif, Arial, Tahoma, Gadget, sans-serif, uicon;
 $fontYekan: Yekan, Tahoma, Arial, Gadget, sans-serif, uicon;

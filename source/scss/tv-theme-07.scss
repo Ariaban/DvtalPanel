@@ -1,0 +1,441 @@
+/* UI/UX: RohanIT.ir */
+/* طراحی رابط و تجربه کاربری فن آوری اطلاعات روهان */
+@charset "utf-8";
+@import "tv";
+$fontApp : $fontIrsans;
+$bkUrlTVCPreview : '';
+$bkUrlTVCPreviewOver : '';
+body.tvcPre:before {
+    width: 100%;
+    height: 100%;
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: block;
+
+    background-color: #000000;
+    background-image: url();
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+
+    -webkit-filter: blur(0px) grayscale(0%);
+    -moz-filter: blur(0px) grayscale(0%);
+    -o-filter: blur(0px) grayscale(0%);
+    -ms-filter: blur(0px) grayscale(0%);
+    filter: blur(0px) grayscale(0%);
+
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+    filter: alpha(opacity=100);
+    -moz-opacity: 1;
+    -khtml-opacity: 1;
+    opacity: 1;
+    z-index: -1;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+body.tvcPre {
+    width: 1080px !important;
+    min-width: 1080px !important;
+    max-width: 1080px !important;
+    height: 1920px !important;
+    min-height: 1920px !important;
+    max-height: 1920px !important;
+    background-color: #000000;
+    color: $colorFontDefaultL3;
+    font: 0.625em/1em $fontApp;
+    font-weight: normal;
+    line-height: 1.75 !important;
+    letter-spacing: 0;
+    margin: 0px auto;
+    padding: 0;
+    overflow: auto;
+}
+a {
+    background-color: $color1;
+    color: $color1Bk;
+    text-decoration: none;
+    padding: 0px 4px;
+    @include transition(all 0.15s ease);
+    &:hover {
+        background-color: $color1Bk;
+        color: $color1;
+        cursor: pointer;
+    }
+}
+a[disabled] {
+    pointer-events: none;
+}
+a {
+    background-color: $color1;
+    color: lighten($color1, 45);
+    text-decoration: none;
+    @include transition(all 0.15s ease);
+    &:hover {
+        background-color: $color2;
+        color: lighten($color2, 45);
+        cursor: pointer;
+    }
+}
+$gray : #D0D0D0;
+$dark-blue:#1D1D3F;
+@font-face {
+    font-family: 'WMitraBold';
+    src :url(../fonts/WebMitraBold.eot);
+    src :url(../fonts/WebMitraBoldd41d.eot?#iefix) format('embedded-opentype'),
+         url(../fonts/WebMitraBold.woff) format('woff'),
+         url(../fonts/WebMitraBold.ttf) format('trutype'),
+         url(../fonts/WebMitraBold.svg#WebMitraBold) format('svg');
+    font-weight: bold;
+    font-style: normal;
+    unicode-range :U+0600-06FF;
+}
+html, body {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    text-align: center;
+    direction: rtl;
+}
+
+.container{
+  width: 1080px;
+  height: 1920px;
+  margin: auto;
+  overflow:hidden;
+  align-items: center;
+  text-align: center;
+  font-family:WMitraBold;
+  color: #FFF;
+  }
+.view-theme07{
+        width: 1080px;
+        min-width: 1080px;
+        max-width: 1080px;
+        height: 1920px;
+        max-height: 1920px;
+        min-height: 1920px;
+        overflow: hidden;
+        margin: 0px auto;
+        text-align: center;
+        background: url(../images/bg-makup-salon.png) no-repeat;
+        .left-box-top{
+            width: 260px;
+            height: 60px;
+            float: left;
+            text-align: center;
+            margin-top: 180px;
+            .txt{
+                text-align: center;
+                font: $fontSize*2 $fontIrsans;
+                line-height: 50px;
+                span{
+                    text-align: center;
+                }
+            }
+        }
+        .clear{
+            clear: both;
+        }
+        .left-box-bottom{
+            width: 212px;
+            height: 35px;
+            float: left;
+            text-align: center;
+            .txt{
+                text-align: center;
+                font: $fontSize*1.7 $fontIrsans;
+                line-height: 30px;
+                span{
+                    text-align: center;
+                }
+            }
+        }
+        .txt-event{
+            width: 100%;
+            height: 260px;
+            overflow: hidden;
+             .widgetText {
+            position: relative;
+            width: 100%;
+            min-width: 100%;
+            max-width: 100%;
+            height: 100%;
+            min-height: 100%;
+            max-height: 100%;
+            background-color: transparent;
+            color: #FFFFFF;
+            font: $fontSize*2 $fontIrsans;
+            font-weight: 600;
+            font-weight: bold;
+            margin: 0px;
+            padding: 0px;
+            overflow: hidden;
+        }
+            ul.marquee {
+                display: block;
+                padding: 0;
+                margin: 0;
+                list-style: none;
+                line-height: 1;
+                position: relative;
+                overflow: hidden;
+                width: 100%;
+                height: 150px;
+                text-align: center;
+                background-color: transparent;
+                margin: 0px auto;
+                margin-top: 40px !important; 
+            }
+
+            ul.marquee li {
+                position: absolute;
+                top: -999em;
+                right: 0;
+                display: block;
+                white-space: nowrap;
+                font: $fontSize*2.9 $fontIrsans;
+                font-weight: 600;
+                text-align: center;
+                margin: 0px;
+                padding: 30px 30px 0 30px;
+               
+            }
+        }
+        .row-theme07{
+            width: 100%;
+            max-width: 100%;
+            min-width: 100%;
+            height: 460px;
+            max-height: 460px;
+            min-height: 460px;
+            overflow: hidden;
+            .col1-floor{
+                width: 55%;
+                max-width: 55%;
+                min-width: 55%;
+                height: 100%;
+                max-height: 100%; 
+                min-height: 100%;  
+            }
+            .col2-floor{
+                width: 45%;
+                max-width: 45%;
+                min-width: 45%;
+                height: 100%;
+                max-height: 100%;
+                min-height: 100%;
+                .floor-num{
+                    height: 250px;
+                    max-height: 250px;
+                    min-height: 250px;
+                }
+                .floor-event{
+                    height: 210px;
+                    max-height: 210px;
+                    min-height: 210px;
+                }
+                }
+                .widgetText {
+                    position: relative;
+                    width: 100%;
+                    min-width: 100%;
+                    max-width: 100%;
+                    height: 100%;
+                    min-height: 100%;
+                    max-height: 100%;
+                    background-color: transparent;
+                    color: #000;
+                    font: $fontSize*2 $fontIrsans;
+                    font-weight: bold;
+                    margin: 0px;
+                    padding: 0px;
+                    overflow: hidden;
+                }
+                ul.marquee {
+                        display: block;
+                        padding: 0;
+                        margin: 0;
+                        list-style: none;
+                        line-height: 1;
+                        position: relative;
+                        overflow: hidden;
+                        width: 100%;
+                        height: 150px;
+                        text-align: center;
+                        background-color: transparent;
+                        margin: 0px auto;
+                        /*margin-top: 240px !important; */
+                    }
+
+                ul.marquee li {
+                        position: absolute;
+                        top: -999em;
+                        right: 0;
+                        display: block;
+                        white-space: nowrap;
+                        font: $fontSize*1.7 $fontIrsans;
+                        text-align: center;
+                        margin: 0px;
+                        padding: 30px 30px 0 30px;
+                       
+                    }
+            }
+        }
+        .floor1{
+            .col1-floor{
+                width: 55%;
+                max-width: 55%;
+                min-width:55%;
+                height: 100%;
+                max-height: 100%;
+                min-height: 100%;
+                float: right;
+                margin: 0px;
+            }
+            .col2-floor{
+                width: 45%;
+                max-width:45%; 
+                min-width:45%;
+                height: 100%;
+                max-height: 100%;
+                min-height: 100%;
+                float: left;
+                margin: 0px;
+                .floor-num{
+                   
+                    margin: 0px;
+                    padding-top: 190px !important; 
+                    padding: 0px;
+                    overflow: hidden;
+                    color: #fff;
+                    line-height: 30px;
+                    font: $fontSize*3 $fontIrsans; 
+                }
+                 .widgetText {
+                    position: relative;
+                    width: 100%;
+                    min-width: 100%;
+                    max-width: 100%;
+                    height: 100%;
+                    min-height: 100%;
+                    max-height: 100%;
+                    background-color: transparent;
+                    color: #000;
+                    font: $fontSize*2 $fontIrsans;
+                    font-weight: bold;
+                    margin: 0px;
+                    padding: 0px;
+                    overflow: hidden;
+                }
+                    
+            }
+            .slider-theme07{
+                width: 100%;
+                height: 100%;
+                padding-top: 7%;
+                .box-rotate{
+                    width: 80%;
+                    height: 90%;
+                    border: 10px solid #584942;
+                    overflow: hidden;
+                    margin: auto;
+                    transform: rotate(-10deg);
+                    background: #000;
+                }
+            }
+        }
+        .floor2{
+           .col1-floor{
+                width: 55%;
+                height: 100%;
+                float: left;
+                margin: 0px;
+            }
+            .col2-floor{
+                width: 45%;
+                height: 100%;
+                float: right;
+                margin: 0px;
+                .floor-num{
+                   
+                    margin: 0px;
+                    padding-top: 170px !important; 
+                    padding: 0px;
+                   overflow: hidden;
+                    color: #fff;
+                    line-height: 30px;
+                    font: $fontSize*3 $fontIrsans; 
+                }
+              
+                    
+            }
+            .slider-theme07{
+                width: 100%;
+                height: 100%;
+                padding-top: 7%;
+                .box-rotate{
+                    width: 80%;
+                    height: 90%;
+                    border: 10px solid #584942;
+                    overflow: hidden;
+                    margin: auto;
+                    transform: rotate(-10deg);
+                    background: #000;
+                }
+            }
+        }
+        .floor3{
+            .col1-floor{
+                width: 55%;
+                height: 100%;
+                float: right;
+                margin: 0px;
+            }
+            .col2-floor{
+                width: 45%;
+                height: 100%;
+                float: left;
+                margin: 0px;
+                .floor-num{
+                   
+                    margin: 0px;
+                    padding-top: 160px !important; 
+                    padding: 0px;
+                    overflow: hidden; 
+                    color: #fff;
+                    line-height: 30px;
+                    font: $fontSize*3 $fontIrsans;
+                }
+              
+                   
+            }
+            .slider-theme07{
+                width: 100%;
+                height: 100%;
+                padding-top: 7%;
+                .box-rotate{
+                    width: 80%;
+                    height: 90%;
+                    border: 10px solid #584942;
+                    overflow: hidden;
+                    margin: auto;
+                    transform: rotate(10deg);
+                    background: #000;
+                }
+            }
+        }
+
+
+
+
+
+
+
+
+
+
+
