@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="fa">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>سامانه مدیریت و پخش دی وی تال</title>
+
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link href="logo.png" rel="icon" type="image/png">
+
+    <link href="../css/uicon.css" rel="stylesheet" type="text/css">
+    <link href="../css/tv-theme-08.css" media="screen, projection" rel="stylesheet" type="text/css" />
+    <link href="../css/wi.css" rel="stylesheet" type="text/css">
+    
+    <!--[if lt IE 8]>
+      <link href="css/ie.css" media="screen, projection" rel="stylesheet" type="text/css" />
+    <![endif]-->
+    
+    
+    <script src="../js/jquery.js"></script>
+    <script src="../js/jquery-1.2.6.min.js"></script>
+    <script src="../js/jquery.jflip-0.4.js"></script>
+    <script src="../js/Modernizr.js"></script>
+    
+    <script src="../js/jquery.resizeimagetoparent.js"></script>
+    <script src="../js/pdate.min.js"></script>
+    <script src="../js/datePersian.js"></script>
+    <script src="../js/jquery.simpleWeather.js"></script>
+    <script src="../js/rhinoslider-1.05.js"></script>
+    <script src="../js/jquery.marquee.js"></script>
+    <script src="../js/jquery.transit.min.js"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function(){
+            changeEffect('transfer');
+        });
+    </script>
+
+</head>
+<body class="tvcPre">
+
+<div class="fullHD Vertical"> <!-- fullHD Vertical day night -->
+    <div class="container">
+        <div class="bigview-theme08"> 
+            
+           <div class="theme08main">
+                <div class="back"><a href="tvc-theme-08.html"><span class="icon icon-arrow-1-left"></span>بازگشت</a></div>
+                <div class="album-big">
+                    <div class="pic-album">
+                        <ul id="g1">
+                            <li><img src='../images/pic1.jpg'></li>
+                            <li><img src='../images/pic2.jpg'></li>
+                            
+                        </ul>
+                        <script type="text/javascript">
+                            $("#g1").jFlip(825,920,{background:"green",cornersTop:false}).
+                        bind("flip.jflip",function(event,index,total){
+                          $("#l1").html("Image "+(index+1)+" of "+total);
+                        });
+                        </script>
+                    </div>
+                     <div class="title-album">Makeup Artist : Nika</div>
+                    
+                </div>
+              
+                
+               
+                
+            </div>
+
+            <div class="theme08txt">
+               <div class="widgetText">
+                                <ul id="marquee" class="marquee">
+                                    <li>تخفیف ویژه امروز سالن شری ، 30% درصد تخفیف ویژه ی پاکسازی صورت ... </li>
+
+                                </ul>
+                                
+                                <script>
+                                    $(document).ready(function (){
+                                          $("#marquee").marquee({yScroll: "bottom"});
+                                    });
+                                </script>                  
+                    </div>
+            </div>
+
+        </div>
+    </div>         
+   
+</div> <!-- /fullHD Vertical -->
+
+
+
+</body>
+</html>
+
+

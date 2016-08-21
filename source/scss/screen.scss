@@ -10537,5 +10537,134 @@ theme07
         }
 }
 
+/*==============================================================
+theme08
+==============================================================*/
+.theme08Content {
+    display: table;
+    position: relative;
+    width: 529px !important; //1080
+    min-width: 529px !important;
+    max-width: 529px !important;
+    height: 940px !important; //1920
+    min-height: 940px !important;
+    max-height: 940px !important;
+    background-color: #000000;
+    vertical-align: middle;
+    text-align: center;
+    vertical-align: middle;
+    background-image: url(../images/bg-shery-album.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    margin: 0px auto;
+    padding: 0px;
+    overflow: hidden;
+    z-index: 9;
+    .theme08main{
+        width: 100%;
+        max-width: 100%;
+        min-width: 100%;
+        height: 680px;
+        min-height: 680px;
+        max-height: 680px;
+        padding-top: 115px;
+        padding-left: 60px;
+        .album{
+            width: 195px;
+            height: 235px;
+            min-height: 235px;
+            max-height: 235px;
+            background:url(../images/border-album.png) no-repeat;
+            background-size: cover;
+            float: left;
+            margin-left: 20px;
+            margin-bottom: 20px;
+            padding: 14px 12px 0px 13px;
+            .pic-album{
+                width: 100%;
+                height: 190px;
+                max-height: 190px;
+                min-height: 190px;
+                img {
+                max-width: 100%;
+                height: 100%;
+                }
+                .widgetSlider {
+                    width: 100%;
+                    height: 100%;
+                    .rhino-container {
+                        width: 168px !important;;
+                        min-width: 168px;
+                        max-width: 168px;
+                        height: 188px !important;
+                        min-height: 188px;
+                        max-height: 188px;
+                        overflow: hidden;
+                        ul li img {
+                           width: 168px !important;;
+                            min-width: 168px;
+                            max-width: 168px;
+                            height: 188px !important;
+                            min-height: 188px;
+                            max-height: 188px;
+                            overflow: hidden;
+                        }
+                    }
+                    ul li img {
+                           width: 168px !important;;
+                            min-width: 168px;
+                            max-width: 168px;
+                            height: 188px !important;
+                            min-height: 188px;
+                            max-height: 188px;
+                            overflow: hidden;
+                        }
+                }
+            }
+            .title-album{
+                width: 100%;
+                height: 25px;
+                color: #000;
+                font: $fontSize*1.3 $fontIrsans;
+                font-weight: 600;
+                line-height: 20px;
+
+            }
+            
+        }
+    }
+    .theme08txt{
+        width: 100%;
+        max-width: 100%;
+        min-width: 100%;
+        height: 280px;
+        min-height: 280px;
+        max-height: 280px;
+        padding-top: 195px;
+        color: #bb8950;
+        .widgetText{
+             color: #bb8950;
+             font: $fontSize*1.3 $fontIrsans;
+             font-weight: 600;
+                ul.marquee li {
+                position: absolute;
+                top: -999em;
+                right: 0;
+                display: block;
+                white-space: nowrap;
+                font: $fontSize*1.3 $fontIrsans;
+                font-weight: 600;
+                text-align: center;
+                margin: 0;
+                padding: 10px 30px 0;
+            }
 
 
+        }
+    }
+}

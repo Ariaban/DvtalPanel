@@ -278,6 +278,7 @@ html, body {
                         display: block;
                         white-space: nowrap;
                         font: $fontSize*1.7 $fontIrsans;
+                        font-weight: bold;
                         text-align: center;
                         margin: 0px;
                         padding: 30px 30px 0 30px;
@@ -345,6 +346,37 @@ html, body {
                     margin: auto;
                     transform: rotate(-10deg);
                     background: #000;
+                    .widgetSlider {
+			        width: 100%;
+			        height: 100%;
+			        .rhino-container {
+			            width: 455px !important;;
+			            min-width: 455px;
+			            max-width: 455px;
+			            height: 360px !important;
+			            min-height: 360px;
+			            max-height: 360px;
+			            overflow: hidden;
+			            ul li img {
+				           width: 455px !important;;
+				            min-width: 455px;
+				            max-width: 455px;
+				            height: 360px !important;
+				            min-height: 360px;
+				            max-height: 360px;
+				            overflow: hidden;
+				        }
+			        }
+			        ul li img {
+				           width: 455px !important;;
+				            min-width: 455px;
+				            max-width: 455px;
+				            height: 317px !important;
+				            min-height: 317px;
+				            max-height: 317px;
+				            overflow: hidden;
+				        }
+    			}
                 }
             }
         }
@@ -385,6 +417,38 @@ html, body {
                     margin: auto;
                     transform: rotate(-10deg);
                     background: #000;
+                    .widgetSlider {
+			        width: 100%;
+			        height: 100%;
+			        .rhino-container {
+			            width: 455px !important;;
+			            min-width: 455px;
+			            max-width: 455px;
+			            height: 360px !important;
+			            min-height: 360px;
+			            max-height: 360px;
+			            overflow: hidden;
+			            ul li img {
+				           width: 455px !important;;
+				            min-width: 455px;
+				            max-width: 455px;
+				            height: 360px !important;
+				            min-height: 360px;
+				            max-height: 360px;
+				            overflow: hidden;
+				        }
+			        }
+			        ul li img {
+				           width: 455px !important;;
+				            min-width: 455px;
+				            max-width: 455px;
+				            height: 360px !important;
+				            min-height: 360px;
+				            max-height: 360px;
+				            overflow: hidden;
+				        }
+    			}
+
                 }
             }
         }
@@ -425,6 +489,37 @@ html, body {
                     margin: auto;
                     transform: rotate(10deg);
                     background: #000;
+                    .widgetSlider {
+			        width: 100%;
+			        height: 100%;
+			        .rhino-container {
+			            width: 455px !important;;
+			            min-width: 455px;
+			            max-width: 455px;
+			            height: 360px !important;
+			            min-height: 360px;
+			            max-height: 360px;
+			            overflow: hidden;
+			            ul li img {
+				           width: 455px !important;;
+				            min-width: 455px;
+				            max-width: 455px;
+				            height: 360px !important;
+				            min-height: 360px;
+				            max-height: 360px;
+				            overflow: hidden;
+				        }
+			        }
+			        ul li img {
+				           width: 455px !important;;
+				            min-width: 455px;
+				            max-width: 455px;
+				            height: 360px !important;
+				            min-height: 360px;
+				            max-height: 360px;
+				            overflow: hidden;
+				        }
+    			}
                 }
             }
         }
