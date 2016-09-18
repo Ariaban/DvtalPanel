@@ -1,0 +1,331 @@
+/* UI/UX: RohanIT.ir */
+/* طراحی رابط و تجربه کاربری فن آوری اطلاعات روهان */
+/* Grid Component */
+@charset "utf-8";
+@import "compass/reset";
+@import "compass/utilities";
+@import "../../../../source/scss/fonts";
+@import "../../../../source/scss/colors";
+@import "compass/css3";
+html {
+	font-size: $fontSize;
+	direction: rtl;
+}
+body {
+	width: 100%;
+	height: 100%;
+	color: $fontColor1;
+	background-color: $colorWhite;
+	background-image: inherit;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-attachment: fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	font: 0.625em/1em $fontApp;
+	font-weight: normal;
+	line-height: 1.75 !important;
+	letter-spacing: 0;
+	margin: 0;
+	padding: 0;
+	overflow-x: hidden;
+	overflow-y: auto;
+}
+.bk:before {
+	width: 100%;
+    height: 100%;
+	content: "";
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	display: block;
+	background-image: url(../images/bk.gif);
+	background-repeat: no-repeat;
+	background-size: auto;
+	background-position: center bottom;
+	-webkit-filter: blur(0px) grayscale(100%);
+	-moz-filter: blur(0px) grayscale(100%);
+	-o-filter: blur(0px) grayscale(100%);
+	-ms-filter: blur(0px) grayscale(100%);
+	filter: blur(0px) grayscale(100%);
+	
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+	filter: alpha(opacity=100);
+	-moz-opacity: 1;
+	-khtml-opacity: 1;
+	opacity: 1;
+  
+	z-index: -1;
+}
+.redirect:before {
+    width: 100%;
+    height: 100%;
+	content: "";
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	display: block;
+	background-image: url(../images/redirect.jpg);
+	background-repeat: no-repeat;
+	background-size: auto;
+	background-position: center bottom;
+	-webkit-filter: blur(0px) grayscale(0%);
+	-moz-filter: blur(0px) grayscale(0%);
+	-o-filter: blur(0px) grayscale(0%);
+	-ms-filter: blur(0px) grayscale(0%);
+	filter: blur(0px) grayscale(0%);
+	
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+	filter: alpha(opacity=100);
+	-moz-opacity: 1;
+	-khtml-opacity: 1;
+	opacity: 1;
+  
+	z-index: -1;
+}
+.timeOut:before {
+    width: 100%;
+    height: 100%;
+	content: "";
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	display: block;
+	background-image: url(../images/timeOut.jpg);
+	background-repeat: no-repeat;
+	background-size: auto;
+	background-position: center bottom;
+	-webkit-filter: blur(0px) grayscale(0%);
+	-moz-filter: blur(0px) grayscale(0%);
+	-o-filter: blur(0px) grayscale(0%);
+	-ms-filter: blur(0px) grayscale(0%);
+	filter: blur(0px) grayscale(0%);
+	
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+	filter: alpha(opacity=100);
+	-moz-opacity: 1;
+	-khtml-opacity: 1;
+	opacity: 1;
+  
+	z-index: -1;
+}
+.logOut:before {
+    width: 100%;
+    height: 100%;
+	content: "";
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	display: block;
+	background-image: url(../images/logOut.jpg);
+	background-repeat: no-repeat;
+	background-size: auto;
+	background-position: center bottom;
+	-webkit-filter: blur(0px) grayscale(0%);
+	-moz-filter: blur(0px) grayscale(0%);
+	-o-filter: blur(0px) grayscale(0%);
+	-ms-filter: blur(0px) grayscale(0%);
+	filter: blur(0px) grayscale(0%);
+	
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+	filter: alpha(opacity=100);
+	-moz-opacity: 1;
+	-khtml-opacity: 1;
+	opacity: 1;
+  
+	z-index: -1;
+}
+
+.title {
+    width: 480px;
+    color: #ABABAB;
+    font: 2.3em/1em $fontNassim;
+    font-weight: 600;
+    text-align: center;
+    margin: 0px auto;
+    padding: 12px 0;
+    clear: both;
+}
+.blue {
+    color: $colorInfo !important;
+}
+.red {
+    color: $colorWarning !important;
+}
+.dark {
+    color: darken($colorDark, 4) !important;
+}
+.desc {
+    width: 480px;
+    color: #D5D5D5;
+    font: 1.3em/1em $fontAppTitle;
+    font-weight: 600;
+    text-align: center;
+    margin: 0px auto;
+    padding: 6px 0;
+    clear: both;
+}
+.contact {
+    width: 480px;
+    color: #ABABAB;
+    font: 2.3em/1em $fontNassim;
+    font-weight: 600;
+    text-align: center;
+    margin: 0px auto;
+    padding: 12px 0;
+    clear: both;
+}
+
+
+
+
+
+
+ul.item {
+    display: block;
+    position: relative;
+    list-style: none;
+    width: 460px;
+    height: auto;
+    color: #444444;
+    font: 2.15em/1em $fontNassim;
+    font-weight: 600;
+    margin: 0px auto;
+    padding: 0;
+    clear: both;
+    > li {
+        display: inline-block;
+        position: relative;
+        width: 230px;
+        text-align: center;
+        padding: 0;
+        padding-top: 4px;
+        padding-bottom: 4px;
+        float: right;
+    }
+}
+
+
+
+
+
+.btnDefault {
+    display: block;
+	position: relative;
+	width: 100%;
+    height: 17px;
+    line-height: 17px;
+    vertical-align: middle;
+	background-color: $colorGrayLight;
+	color: $fontColorApp;
+	font: 1em/1em $fontYekan;
+    font-weight: 600;
+    text-align: center;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border: none;
+	@include border-radius($borderRadius);
+    margin: 0;
+    padding: 0;
+	padding-top: 6px;
+	cursor: pointer;
+    .icon {
+        display: inline-block;
+        font: 1.35em/1em $fontIcon;
+        height: 15px;
+        line-height: 15px;
+        vertical-align: middle;
+        margin: 0;
+        margin-top: -4px;
+        padding: 0;
+		padding-right: 4px;
+        float: right;
+    }
+	&:hover {
+		background-color: $color1;
+		color: lighten($color1, 35);
+		cursor: pointer;
+	}
+}
+
+
+
+
+
+
+.btnPlace {
+    width: 150px;
+    height: 27px;
+    line-height: 27px;
+    vertical-align: middle;
+    margin: 0px auto;
+    overflow: hidden;
+}
+.btnDefault {
+	display: block;
+	position: relative;
+	width: 100%;
+    height: 27px;
+    line-height: 27px;
+    vertical-align: middle;
+	font: 1em/1em $fontYekan;
+    font-weight: 600;
+    text-align: center;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border: none;
+	@include border-radius($borderRadius);
+    margin: 0;
+    padding: 0;
+    .icon {
+        display: inline-block;
+        font: 1.5em/1em $fontIcon;
+        height: 27px;
+        line-height: 27px;
+        vertical-align: middle;
+        margin: 0;
+        margin-top: 0;
+        padding: 0;
+        padding-right: 4px;
+        float: right;
+    }
+	.txt {
+		display: inline-block;
+		font: 0.9em/1em $fontYekan;
+		font-weight: 600;
+		padding-top: 8px;
+		margin-right: -24px;
+	}
+	&:hover {
+		@include box-shadow(inset 1px 1px 1px rgba(255, 255, 255, 0.3), 0 2px 2px rgba(0, 0, 0, 0.15), 0 1px 2px -2px rgba(0, 0, 0, 0.2));
+		cursor: pointer;
+	}
+}
+.btnRed {
+    @extend .btnDefault;
+    font: 1.15em/1em $fontApp;
+    &:hover {
+        background-color: $colorWarning;
+        color: $colorWhite;
+    }
+}
+.btnBlue {
+    @extend .btnDefault;
+    &:hover {
+        background-color: $colorInfo;
+        color: $colorWhite;
+    }
+}
+
+
+
+
+

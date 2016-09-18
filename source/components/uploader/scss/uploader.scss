@@ -1,0 +1,372 @@
+/* UI/UX: RohanIT.ir */
+/* طراحی رابط و تجربه کاربری فن آوری اطلاعات روهان */
+/* Uploader Component */
+@charset "utf-8";
+@import "compass/reset";
+@import "compass/utilities";
+@import "../../../../source/scss/fonts";
+@import "../../../../source/scss/colors";
+@import "../../../../source/scss/checkbox";
+@import "../../../../source/scss/progressbar";
+@import "compass/css3";
+
+
+
+
+
+
+html {
+	font-size: $fontSize;
+	direction: rtl;
+}
+body {
+	width: 100%;
+	height: auto;
+	color: $fontColor1;
+	background-color: transparent;
+	background-image: inherit;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-attachment: fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	font: 0.625em/1em $fontApp;
+	font-weight: normal;
+	line-height: 1.75 !important;
+	letter-spacing: 0;
+	margin: 0;
+	padding: 0;
+	overflow-x: hidden;
+	overflow-y: auto;
+}
+
+
+
+
+
+
+
+
+.uploaderComp {
+	width: 100%;
+	background-color: $colorWhite;
+	color: $fontColorApp;
+	a {
+		background-color: transparent;
+		color: $color1;
+		text-decoration: none;
+		@include transition(all 0.15s ease);
+		&:hover {
+			background-color: transparent;
+			color: darken($color1, 15);
+			cursor: pointer;
+		}
+	}
+}
+.uploaderCompHeader {
+	width: 100%;
+	background-color: transparent;
+	color: $fontColorApp;
+	.txt {
+		font: 1.5em/1em $fontAppTitle;
+		font-weight: 600;
+		line-height: 1.85;
+	}
+	.ver {
+		font: 1em/1em $fontApp;
+		font-weight: 400;
+		line-height: 1.55;
+	}
+}
+.uploaderCompBlock {
+	background-color: transparent;
+	color: $fontColorApp;
+	line-height: 1.55;
+	.uploaderCompTitle {
+		font: 1.35em/1em $fontAppTitle;
+		font-weight: 600;
+		line-height: 1.85;
+	}
+}
+
+
+
+
+
+
+.btnDefault {
+    display: block;
+	position: relative;
+	width: 100%;
+    height: 17px;
+    line-height: 17px;
+    vertical-align: middle;
+	background-color: $colorGrayLight;
+	color: $fontColorApp;
+	font: 1em/1em $fontYekan;
+    font-weight: 600;
+    text-align: center;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border: none;
+	@include border-radius($borderRadius);
+    margin: 0;
+    padding: 0;
+	padding-top: 6px;
+	cursor: pointer;
+    .icon {
+        display: inline-block;
+        font: 1.35em/1em $fontIcon;
+        height: 15px;
+        line-height: 15px;
+        vertical-align: middle;
+        margin: 0;
+        margin-top: -4px;
+        padding: 0;
+		padding-right: 4px;
+        float: right;
+    }
+	&:hover {
+		background-color: $color1;
+		color: lighten($color1, 35);
+		cursor: pointer;
+	}
+}
+.btnUploadDelete {
+	@extend .btnDefault;
+	width: 17px;
+	height: 17px;
+    line-height: 17px;
+	vertical-align: middle;
+	background-color: lighten($colorWarning, 5);
+	color: $colorWhite;
+	margin: 0;
+	padding: 0;
+	@include border-radius($borderRadiusBtn);
+	.icon {
+        display: inline-block;
+        font: 1.15em/1em $fontIcon;
+        height: 15px;
+        line-height: 15px;
+        vertical-align: middle;
+        margin: 0;
+        margin-top: 0px;
+        padding: 0;
+		padding-right: 2px;
+        float: right;
+    }
+	&:hover {
+		background-color: darken($colorWarning, 5);
+		color: $colorWhite;
+		cursor: pointer;
+	}
+}
+a.btnUploadDelete, a.btnUploadDelete:visited {
+	@extend .btnUploadDelete;
+	&:hover {
+		background-color: darken($colorWarning, 5);
+		color: $colorWhite;
+		cursor: pointer;
+	}
+}
+.btnUploadStart {
+	@extend .btnDefault;
+	width: 70px;
+	height: 17px;
+    line-height: 17px;
+	vertical-align: middle;
+	background-color: lighten($colorSuccess, 5);
+	color: $colorWhite;
+	margin: 0;
+	padding: 0;
+	@include border-radius($borderRadiusBtn);
+	.icon {
+        display: inline-block;
+        font: 1.15em/1em $fontIcon;
+        height: 15px;
+        line-height: 15px;
+        vertical-align: middle;
+        margin: 0;
+        margin-top: 0px;
+        padding: 0;
+		padding-right: 2px;
+        float: right;
+    }
+	&:hover {
+		background-color: darken($colorSuccess, 5);
+		color: $colorWhite;
+		cursor: pointer;
+	}
+}
+a.btnUploadStart, a.btnUploadStart:visited {
+	@extend .btnUploadStart;
+	&:hover {
+		background-color: darken($colorSuccess, 5);
+		color: $colorWhite;
+		cursor: pointer;
+	}
+}
+
+
+
+
+
+
+.btnFileBrowse {
+    display: block;
+	position: relative;
+	width: 100%;
+    height: 17px;
+    line-height: 17px;
+    vertical-align: middle;
+	background-color: lighten($colorInfo, 5);
+	color: $colorWhite;
+	font: 1em/1em $fontYekan;
+    font-weight: 600;
+    text-align: center;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border: none;
+	@include border-radius($borderRadius);
+    margin: 0;
+    padding: 0;
+	padding-top: 6px;
+	cursor: pointer;
+    .icon {
+        display: inline-block;
+        font: 1.75em/1em $fontIcon;
+        height: 15px;
+        line-height: 15px;
+        vertical-align: middle;
+        margin: 0;
+        margin-top: -4px;
+        padding: 0;
+		padding-right: 4px;
+        float: right;
+    }
+	&:hover {
+		background-color: darken($colorInfo, 5);
+		color: $colorWhite;
+		cursor: pointer;
+	}
+}
+.fileBrowsePlace {
+    position: relative;
+	width: 130px;
+	height: 23px;
+	line-height: 23px;
+	vertical-align: middle;
+    overflow: hidden;
+	cursor: pointer;
+}
+.fileBrowsePlace input.fileBrowseSelect {
+    position: absolute;
+	height: 23px;
+	line-height: 23px;
+	vertical-align: middle;
+    top: 0;
+    right: 0;
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+    cursor: pointer;
+    opacity: 0;
+    filter: alpha(opacity=0);
+}
+form input[type="file"].btnFileBrowse,
+input[type="file"].btnFileBrowse {
+    @extend .btnFileBrowse;
+    cursor: pointer;
+}
+
+
+
+
+
+
+.uploaderCompHotspot {
+	display: block;
+	position: relative;
+	width: 100%;
+}
+.uploaderCompList {
+	display: block;
+	position: relative;
+	list-style: none;
+	width: 100%;
+	li > div {
+		display: block;
+		position: relative;
+		height: 23px;
+		line-height: 23px;
+		vertical-align: middle;
+		border-bottom: 1px $colorGrayLight solid;
+		float: right;
+		margin: 0;
+		padding: 0;
+		a {
+			display: block;
+			position: relative;
+			float: right;
+			margin-left: 2px;
+		}
+	}
+	li {
+		display: block;
+		position: relative;
+		width: 100%;
+		clear: both;
+		.title {
+			display: block;
+			position: relative;
+			height: 23px;
+			line-height: 23px;
+			vertical-align: middle;
+			background-color: $colorGrayLight;
+			color: $colorGrayDark;
+			font: 1.15em/1em $fontAppTitle;
+			font-weight: 600;
+			line-height: 1.65;
+			padding: 0;
+		}
+		.txt {
+			display: block;
+			position: relative;
+			width: 100%;
+			height: 100%;
+			border: 1px $colorWhite solid;
+			padding: 3px 4px 0 0;
+		}
+        .progressPlace {
+			display: inline-block;
+			position: relative;
+			width: 100%;
+			height: 100%;
+            padding: 4px 0 0 0;
+            overflow: hidden;
+		}
+		.checkBox {
+			width: 4%;
+		}
+		.fileName {
+			width: 27%;
+		}
+		.fileSize {
+			width: 13%;
+		}
+		.btnPlace {
+			width: 18%;
+		}
+		.progress {
+			width: 38%;
+		}
+	}
+}
+
+
+
+

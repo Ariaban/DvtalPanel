@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="fa">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>کامپوننت آپلود</title>
+    
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link href="logo.png" rel="icon" type="image/png">
+
+    <link href="css/uicon.css" rel="stylesheet" type="text/css">
+    <link href="css/uploader.css" media="screen, projection" rel="stylesheet" type="text/css" />
+    
+    <style>
+		.wrap {
+			width: 70%;
+			margin: 0px auto;
+		}
+	</style>
+</head>
+<body>
+
+<div class="wrap"> <!-- wrap -->
+
+<div class="uploaderComp"> <!-- uploaderComp -->
+<div class="uploaderCompHeader"> <!-- uploaderCompHeader -->
+    <a href="#" class="" title="کامپوننت آپلود">
+        <div class="txt">کامپوننت آپلود</div>
+        <div class="ver">Uploader Component ver. 1.0</div>
+    </a>
+</div> <!-- /uploaderCompHeader -->
+
+<div class="uploaderCompBlock">  <!-- uploaderCompBlock -->
+	
+	<div class="uploaderCompTitle">
+    	انتخاب فایل ها جهت آپلود
+    </div>
+    
+    <div class="fileBrowsePlace">
+        <div class="btnFileBrowse">
+            <span> <span class="icon" data-icon="&#xe05b;"></span> انتخاب فایل</span>
+            <input type="file" class="fileBrowseSelect" />
+        </div>
+    </div>
+    
+    <div class="uploaderCompHotspot">
+    	<ul class="uploaderCompList">
+        	<li>
+            	<div class="title checkBox"><span class="txt">
+                	<div class="squaredThree">
+                        <input type="checkbox" value="None" id="checkAll" name="checkAll" />
+                        <label for="checkAll"></label>
+                    </div>
+                </span></div>
+                <div class="title fileName"><span class="txt">نام فایل</span></div>
+                <div class="title fileSize"><span class="txt">سایز</span></div>
+                <div class="title btnPlace"><span class="txt">کنترل</span></div>
+                <div class="title progress"><span class="txt">پیشرفت</span></div>
+            </li>
+            <li>
+            	<div class="checkBox"><span class="txt">
+                	<div class="squaredThree">
+                        <input type="checkbox" value="None" id="check1" name="check1" />
+                        <label for="check1"></label>
+                    </div>
+                </span></div>
+                <div class="fileName"><span class="txt">kamrankafi.pdf</span></div>
+                <div class="fileSize"><span class="txt">123.123</span></div>
+                <div class="btnPlace"><span class="txt">
+                	<a class="btnUploadDelete"><span class="icon" data-icon="&#xe0da;"></span></a>
+                    <a class="btnUploadStart"><span class="icon" data-icon="&#xe06d;"></span> ارسال فایل</a>
+                </span></div>
+                <div class="progress"><span class="progressPlace">
+                	<progress max="100" value="80" class="progressUploader">
+                        <div class="progress-bar">
+                            <span style="width: 80%">80%</span>
+                        </div>
+                    </progress>
+                </span></div>
+            </li>
+            <li>
+            	<div class="checkBox"><span class="txt">
+                	<div class="squaredThree">
+                        <input type="checkbox" value="None" id="check2" name="check2" />
+                        <label for="check2"></label>
+                    </div>
+                </span></div>
+                <div class="fileName"><span class="txt">kamrankafi.pdf</span></div>
+                <div class="fileSize"><span class="txt">123.123</span></div>
+                <div class="btnPlace"><span class="txt">
+                	<a class="btnUploadDelete"><span class="icon" data-icon="&#xe0da;"></span></a>
+                    <a class="btnUploadStart"><span class="icon" data-icon="&#xe06d;"></span> ارسال فایل</a>
+                </span></div>
+                <div class="progress"><span class="txt"></span></div>
+            </li>
+        </ul>
+    
+    </div>
+    
+    
+                                        
+</div> <!-- /uploaderCompBlock -->
+</div> <!-- /uploaderComp -->
+
+</div> <!-- /wrap -->
+
+</body>
+</html>

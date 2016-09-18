@@ -1,0 +1,503 @@
+<!doctype html>
+<html lang="fa">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>کامپوننت لیست شبکه ای</title>
+    
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link href="logo.png" rel="icon" type="image/png">
+
+    <link href="css/uicon.css" rel="stylesheet" type="text/css">
+    <link href="css/grid.css" media="screen, projection" rel="stylesheet" type="text/css" />
+    <link href="css/structure.css" media="screen, projection" rel="stylesheet" type="text/css" />
+    
+    <script src="../../../bower_components/jquery/dist/jquery.js"></script>
+    <script src="../../scripts/jquery.keynavigator.js"></script>
+    
+    <script src="scripts/grid.js"></script>
+    
+    <style>
+		.wrap {
+			width: 70%;
+			margin: 0px auto;
+		}
+	</style>
+</head>
+<body>
+
+<div class="wrap"> <!-- wrap -->
+
+<div class="gridComp"> <!-- gridComp -->
+<div class="gridCompHeader"> <!-- gridCompHeader -->
+    <a href="#" class="" title="کامپوننت لیست شبکه ای">
+        <div class="txt">کامپوننت لیست شبکه ای</div>
+        <div class="ver">Grid Component ver. 1.0</div>
+    </a>
+</div> <!-- /gridCompHeader -->
+<div class="gridCompBlock">  <!-- gridCompBlock -->
+    
+    <div class="gridCompFilter"> <!-- gridCompFilter -->
+        
+        <div class="filterTitle">
+            <a class="btnToggleTop" href="#" id="btnToggleTop">
+                <span class="icon" data-icon="&#xe215;"></span>
+                <span>باز شدن تنظیمات فیلترینگ و نمایش لیست شبکه ای</span>
+            </a>
+        </div>
+        <div class="filterPlace" id="panelToggle" style="display: none;">
+            
+            <div class="filterPlaceTitle">
+                ترتیب نمایش و همچنین چگونگی مرتب سازی را تنظیم نمایید
+            </div>
+            
+            <ul id="" class="gridCompList">
+                <li class="dragHeader">
+                    <div class="col4" id="div1" ondrop="drop(event)" ondragover="allowDrop(event)">
+                        <div class="cell" id="drag1" draggable="true" ondragstart="drag(event)">
+                            <span class="title">1 نام ویا عنوان بلاک</span>
+                        </div>
+                    </div>
+                    <div class="col5" id="div2" ondrop="drop(event)" ondragover="allowDrop(event)">
+                        <div class="cell" id="drag2" draggable="true" ondragstart="drag(event)">
+                            <span class="title">2 نام ویا عنوان بلاک</span>
+                        </div>
+                    </div>
+                    <div class="col20" id="div3" ondrop="drop(event)" ondragover="allowDrop(event)">
+                        <div class="cell" id="drag3" draggable="true" ondragstart="drag(event)">
+                            <span class="title">3 نام ویا عنوان بلاک</span>
+                            <span class="titleSmall"></span>
+                            <span class="titleSelect">مرتب سازی بر اساس</span>
+                            <span class="gridSelectDragBoxPlace">
+                                <select class="gridSelectDragBox">
+                                    <option>صعودی</option>
+                                    <option>نزولی</option>
+                                    <option>مرتب نشده</option>
+                                </select>
+                            </span>
+                            <span class="titleSelect">تعیین نحوه جستجو</span>
+                            <span class="gridSelectDragBoxPlace">
+                                <select class="gridSelectDragBox">
+                                    <option>اول</option>
+                                    <option>آخر</option>
+                                    <option>دقیق</option>
+                                    <option>دارای</option>
+                                </select>
+                            </span>
+                            <span class="titleSelect">نسبت اندازه ها به درصد</span>
+                            <span class="gridSelectDragBoxPlace">
+                                <select class="gridSelectDragBox">
+                                    <option>۵</option>
+                                    <option>۱۰</option>
+                                    <option>۱۵</option>
+                                    <option>۲۰</option>
+                                    <option>۲۵</option>
+                                    <option>۳۰</option>
+                                    <option>۳۵</option>
+                                    <option>۴۰</option>
+                                </select>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="col20" id="div4" ondrop="drop(event)" ondragover="allowDrop(event)">
+                        <div class="cell" id="drag4" draggable="true" ondragstart="drag(event)">
+                            <span class="title">4 نام ویا عنوان بلاک</span>
+                            <span class="titleSmall"></span>
+                            <span class="titleSelect">مرتب سازی بر اساس</span>
+                            <span class="gridSelectDragBoxPlace">
+                                <select class="gridSelectDragBox">
+                                    <option>صعودی</option>
+                                    <option>نزولی</option>
+                                    <option>مرتب نشده</option>
+                                </select>
+                            </span>
+                            <span class="titleSelect">تعیین نحوه جستجو</span>
+                            <span class="gridSelectDragBoxPlace">
+                                <select class="gridSelectDragBox">
+                                    <option>اول</option>
+                                    <option>آخر</option>
+                                    <option>دقیق</option>
+                                    <option>دارای</option>
+                                </select>
+                            </span>
+                            <span class="titleSelect">نسبت اندازه ها به درصد</span>
+                            <span class="gridSelectDragBoxPlace">
+                                <select class="gridSelectDragBox">
+                                    <option>۵</option>
+                                    <option>۱۰</option>
+                                    <option>۱۵</option>
+                                    <option>۲۰</option>
+                                    <option>۲۵</option>
+                                    <option>۳۰</option>
+                                    <option>۳۵</option>
+                                    <option>۴۰</option>
+                                </select>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="col10" id="div5" ondrop="drop(event)" ondragover="allowDrop(event)">
+                        <div class="cell" id="drag5" draggable="true" ondragstart="drag(event)">
+                            <span class="title">5 نام ویا عنوان بلاک</span>
+                            <span class="titleSmall"></span>
+                            <span class="titleSelect">مرتب سازی بر اساس</span>
+                            <span class="gridSelectDragBoxPlace">
+                                <select class="gridSelectDragBox">
+                                    <option>صعودی</option>
+                                    <option>نزولی</option>
+                                    <option>مرتب نشده</option>
+                                </select>
+                            </span>
+                            <span class="titleSelect">تعیین نحوه جستجو</span>
+                            <span class="gridSelectDragBoxPlace">
+                                <select class="gridSelectDragBox">
+                                    <option>اول</option>
+                                    <option>آخر</option>
+                                    <option>دقیق</option>
+                                    <option>دارای</option>
+                                </select>
+                            </span>
+                            <span class="titleSelect">نسبت اندازه ها به درصد</span>
+                            <span class="gridSelectDragBoxPlace">
+                                <select class="gridSelectDragBox">
+                                    <option>۵</option>
+                                    <option>۱۰</option>
+                                    <option>۱۵</option>
+                                    <option>۲۰</option>
+                                    <option>۲۵</option>
+                                    <option>۳۰</option>
+                                    <option>۳۵</option>
+                                    <option>۴۰</option>
+                                </select>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="col15" id="div6" ondrop="drop(event)" ondragover="allowDrop(event)">
+                        <div class="cell" id="drag6" draggable="true" ondragstart="drag(event)">
+                            <span class="title">6 نام ویا عنوان بلاک</span>
+                            <span class="titleSmall"></span>
+                            <span class="titleSelect">مرتب سازی بر اساس</span>
+                            <span class="gridSelectDragBoxPlace">
+                                <select class="gridSelectDragBox">
+                                    <option>صعودی</option>
+                                    <option>نزولی</option>
+                                    <option>مرتب نشده</option>
+                                </select>
+                            </span>
+                            <span class="titleSelect">تعیین نحوه جستجو</span>
+                            <span class="gridSelectDragBoxPlace">
+                                <select class="gridSelectDragBox">
+                                    <option>اول</option>
+                                    <option>آخر</option>
+                                    <option>دقیق</option>
+                                    <option>دارای</option>
+                                </select>
+                            </span>
+                            <span class="titleSelect">نسبت اندازه ها به درصد</span>
+                            <span class="gridSelectDragBoxPlace">
+                                <select class="gridSelectDragBox">
+                                    <option>۵</option>
+                                    <option>۱۰</option>
+                                    <option>۱۵</option>
+                                    <option>۲۰</option>
+                                    <option>۲۵</option>
+                                    <option>۳۰</option>
+                                    <option>۳۵</option>
+                                    <option>۴۰</option>
+                                </select>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="col20" id="div7" ondrop="drop(event)" ondragover="allowDrop(event)">
+                        <div class="cell" id="drag7" draggable="true" ondragstart="drag(event)">
+                            <span class="title">7 نام ویا عنوان بلاک</span>
+                            <span class="titleSmall"></span>
+                            <span class="titleSelect">مرتب سازی بر اساس</span>
+                            <span class="gridSelectDragBoxPlace">
+                                <select class="gridSelectDragBox">
+                                    <option>صعودی</option>
+                                    <option>نزولی</option>
+                                    <option>مرتب نشده</option>
+                                </select>
+                            </span>
+                            <span class="titleSelect">تعیین نحوه جستجو</span>
+                            <span class="gridSelectDragBoxPlace">
+                                <select class="gridSelectDragBox">
+                                    <option>اول</option>
+                                    <option>آخر</option>
+                                    <option>دقیق</option>
+                                    <option>دارای</option>
+                                </select>
+                            </span>
+                            <span class="titleSelect">نسبت اندازه ها به درصد</span>
+                            <span class="gridSelectDragBoxPlace">
+                                <select class="gridSelectDragBox">
+                                    <option>۵</option>
+                                    <option>۱۰</option>
+                                    <option>۱۵</option>
+                                    <option>۲۰</option>
+                                    <option>۲۵</option>
+                                    <option>۳۰</option>
+                                    <option>۳۵</option>
+                                    <option>۴۰</option>
+                                </select>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="col3" id="div8" ondrop="drop(event)" ondragover="allowDrop(event)">
+                        <div class="cell" id="drag8" draggable="true" ondragstart="drag(event)">
+                            <span class="title">8 نام ویا عنوان بلاک</span>
+                        </div>
+                    </div>
+                    <div class="col3" id="div9" ondrop="drop(event)" ondragover="allowDrop(event)">
+                        <div class="cell" id="drag9" draggable="true" ondragstart="drag(event)">
+                            <span class="title">9 نام ویا عنوان بلاک</span>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+            
+            <div class="filterPlaceBtn">
+                <a class="btnSave" href="#">
+                    <span class="icon" data-icon="&#xe042;"></span>
+                    <span>ثبت تنظیمات</span>
+                </a>
+            </div>
+            
+        </div>
+        
+    </div> <!-- /gridCompFilter -->
+    <ul id="gridSearch" class="gridCompList"> <!-- gridCompList search -->
+        <li class="search">
+            <div class="col4"><div class="cell colSearchClear">
+                <a class="" href="#"><span class="icon" data-icon="&#xe20d;"></span></a>
+            </div></div>
+            <div class="col5"><div class="cell">
+                <input class="gridInputDefaultSearch" type="search" placeholder="">
+            </div></div>
+            <div class="col20"><div class="cell">
+                <input class="gridInputDefaultSearch" type="search" placeholder="">
+            </div></div>
+            <div class="col20"><div class="cell">
+                <input class="gridInputDefaultSearch" type="search" placeholder="">
+            </div></div>
+            <div class="col10"><div class="cell">
+                <input class="gridInputDefaultSearch" type="search" placeholder="">
+            </div></div>
+            <div class="col15"><div class="cell">
+                <input class="gridInputDefaultSearch" type="search" placeholder="">
+            </div></div>
+            <div class="col20"><div class="cell">
+                <input class="gridInputDefaultSearch" type="search" placeholder="">
+            </div></div>
+            <div class="col3"><div class="cell">&nbsp;</div></div>
+            <div class="col3"><div class="cell">&nbsp;</div></div>
+        </li>
+    </ul> <!-- /gridCompList search -->
+	<ul id="gridComponent" class="gridCompList"> <!-- gridCompList -->
+        <li class="header">
+            <div class="col4">
+                <div class="cell colCheck">
+                    <div class="checkDefault">
+                        <input type="checkbox" value="None" id="checkAll" name="checkAll" />
+                        <label for="checkAll"></label>
+                    </div>
+                </div>
+            </div>
+            <div class="col5"><div class="cell colNo">&nbsp;</div></div>
+            <div class="col20"><div class="cell">
+                <span>نام فایل</span>
+                <a class="sortIcon" href="#"><span class="icon" data-icon="&#xe256;"></span></a>
+            </div></div>
+            <div class="col20"><div class="cell">
+                <span>سایز</span>
+                <a class="sortIcon" href="#"><span class="icon" data-icon="&#xe246;"></span></a>
+            </div></div>
+            <div class="col10"><div class="cell">
+                <span>کنترل</span>
+                <a class="sortIcon" href="#"><span class="icon" data-icon="&#xe249;"></span></a>
+            </div></div>
+            <div class="col15"><div class="cell">
+                <span>پیشرفت</span>
+                <a class="sortIcon" href="#"><span class="icon" data-icon="&#xe256;"></span></a>
+            </div></div>
+            <div class="col20"><div class="cell">
+                <span>توضیحات</span>
+                <a class="sortIcon" href="#"><span class="icon" data-icon="&#xe256;"></span></a>
+            </div></div>
+            <div class="col3"><div class="cell">&nbsp;</div></div>
+            <div class="col3"><div class="cell">&nbsp;</div></div>
+        </li>
+        <li class="row">
+            <div class="col4 checkAndTag">
+                <div class="cell colCheck">
+                    <div class="checkDefault">
+                        <input class="checkBoxDetect" type="checkbox" value="None" id="check1" name="check1" />
+                        <label for="check1"></label>
+                    </div>
+                </div>
+                <div class="gridInputTagPlace">
+                    <input id="" tabindex="" class="gridInputTag" type="text" placeholder="" autofocus>
+                </div>
+            </div>
+            <div class="col5"><div class="cell colNo">۱</div></div>
+            <div class="col20"><div class="cell">نام فایل</div></div>
+            <div class="col20"><div class="cell">سایز</div></div>
+            <div class="col10"><div class="cell">کنترل</div></div>
+            <div class="col15"><div class="cell">پیشرفت</div></div>
+            <div class="col20"><div class="cell">توضیحات</div></div>
+            <div class="col3"><div class="cell cellBtnAction">
+                <a class="btnActionDelete"><span class="icon" data-icon="&#xe0da;"></span></a>    
+            </div></div>
+            <div class="col3"><div class="cell cellBtnAction">
+                <a class="btnActionDetails"><span class="icon" data-icon="&#xe0b7;"></span></a>    
+            </div></div>
+        </li>
+        <li class="row">
+            <div class="col4 checkAndTag">
+                <div class="cell colCheck">
+                    <div class="checkDefault">
+                        <input class="checkBoxDetect" type="checkbox" value="None" id="check2" name="check2" />
+                        <label for="check2"></label>
+                    </div>
+                </div>
+                <div class="gridInputTagPlace">
+                    <input id="" tabindex="" class="gridInputTag" type="text" placeholder="" autofocus>
+                </div>
+            </div>
+            <div class="col5"><div class="cell colNo">۲</div></div>
+            <div class="col20"><div class="cell">نام فایل نام فایل نام فایل نام فایل نام فایل نام فایل</div></div>
+            <div class="col20"><div class="cell">سایز</div></div>
+            <div class="col10"><div class="cell">کنترل</div></div>
+            <div class="col15"><div class="cell">پیشرفت</div></div>
+            <div class="col20"><div class="cell">توضیحات</div></div>
+            <div class="col3"><div class="cell cellBtnAction">
+                <a class="btnActionDelete"><span class="icon" data-icon="&#xe0da;"></span></a>    
+            </div></div>
+            <div class="col3"><div class="cell cellBtnAction">
+                <a class="btnActionDetails"><span class="icon" data-icon="&#xe0b7;"></span></a>    
+            </div></div>
+        </li>
+        <li class="row">
+            <div class="col4 checkAndTag">
+                <div class="cell colCheck">
+                    <div class="checkDefault">
+                        <input class="checkBoxDetect" type="checkbox" value="None" id="check3" name="check3" />
+                        <label for="check3"></label>
+                    </div>
+                </div>
+                <div class="gridInputTagPlace">
+                    <input id="" tabindex="" class="gridInputTag" type="text" placeholder="" autofocus>
+                </div>
+            </div>
+            <div class="col5"><div class="cell colNo">۳</div></div>
+            <div class="col20"><div class="cell">نام فایل</div></div>
+            <div class="col20"><div class="cell">سایز</div></div>
+            <div class="col10"><div class="cell">کنترل</div></div>
+            <div class="col15"><div class="cell">پیشرفت</div></div>
+            <div class="col20"><div class="cell">توضیحات توضیحات توضیحات توضیحات توضیحات توضیحات توضیحات</div></div>
+            <div class="col3"><div class="cell cellBtnAction">
+                <a class="btnActionDelete"><span class="icon" data-icon="&#xe0da;"></span></a>    
+            </div></div>
+            <div class="col3"><div class="cell cellBtnAction">
+                <a class="btnActionDetails"><span class="icon" data-icon="&#xe0b7;"></span></a>    
+            </div></div>
+        </li>
+        <li class="row">
+            <div class="col4 checkAndTag">
+                <div class="cell colCheck">
+                    <div class="checkDefault">
+                        <input class="checkBoxDetect" type="checkbox" value="None" id="check4" name="check4" />
+                        <label for="check4"></label>
+                    </div>
+                </div>
+                <div class="gridInputTagPlace">
+                    <input id="" tabindex="" class="gridInputTag" type="text" placeholder="" autofocus>
+                </div>
+            </div>
+            <div class="col5"><div class="cell colNo">۴</div></div>
+            <div class="col20"><div class="cell">نام فایل نام فایل نام فایل نام فایل نام فایل نام فایل</div></div>
+            <div class="col20"><div class="cell">سایز</div></div>
+            <div class="col10"><div class="cell">کنترل</div></div>
+            <div class="col15"><div class="cell">پیشرفت</div></div>
+            <div class="col20"><div class="cell">توضیحات</div></div>
+            <div class="col3"><div class="cell cellBtnAction">
+                <a class="btnActionDelete"><span class="icon" data-icon="&#xe0da;"></span></a>    
+            </div></div>
+            <div class="col3"><div class="cell cellBtnAction">
+                <a class="btnActionDetails"><span class="icon" data-icon="&#xe0b7;"></span></a>    
+            </div></div>
+        </li>
+        <li class="row">
+            <div class="col4 checkAndTag">
+                <div class="cell colCheck">
+                    <div class="checkDefault">
+                        <input class="checkBoxDetect" type="checkbox" value="None" id="check5" name="check5" />
+                        <label for="check5"></label>
+                    </div>
+                </div>
+                <div class="gridInputTagPlace">
+                    <input id="" tabindex="" class="gridInputTag" type="text" placeholder="" autofocus>
+                </div>
+            </div>
+            <div class="col5"><div class="cell colNo">۵</div></div>
+            <div class="col20"><div class="cell">نام فایل</div></div>
+            <div class="col20"><div class="cell">سایز</div></div>
+            <div class="col10"><div class="cell">کنترل</div></div>
+            <div class="col15"><div class="cell">پیشرفت</div></div>
+            <div class="col20"><div class="cell">توضیحات توضیحات توضیحات توضیحات توضیحات توضیحات توضیحات</div></div>
+            <div class="col3"><div class="cell cellBtnAction">
+                <a class="btnActionDelete"><span class="icon" data-icon="&#xe0da;"></span></a>    
+            </div></div>
+            <div class="col3"><div class="cell cellBtnAction">
+                <a class="btnActionDetails"><span class="icon" data-icon="&#xe0b7;"></span></a>    
+            </div></div>
+        </li>
+	</ul> <!-- /gridCompList -->
+    <div class="gridCompFooter"> <!-- gridCompFooter -->
+        <div class="pagingNoRecPlace">
+            <span class="noRecTxt">تعداد کل: </span>
+            <span class="noRecAll">۲۰۰</span>
+        </div>
+        <div class="pagingPagesPlace">
+            <ul class="paging">
+                <li class="arrowRight">
+                    <a href=""><span class="icon" data-icon="&#xe128;"></span></a>
+                </li>
+                <li class="select"><a href="">۱</a></li>
+                <li><a href="">۲</a></li>
+                <li><a href="">۳</a></li>
+                <li><a href="">۴</a></li>
+                <li class="more">
+                    <a href=""><span class="icon" data-icon="&#xe094;"></span></a>
+                </li>
+                <li><a href="">۸</a></li>
+                <li><a href="">۹</a></li>
+                <li class="arrowLeft">
+                    <a href=""><span class="icon" data-icon="&#xe129;"></span></a>
+                </li>
+            </ul>
+        </div>
+        <div class="pagingBlockLeftPlace">
+            <div class="pagingNoPlace">
+                <span class="noAll">۲۰</span>
+                <span class="noSep">/</span>
+                <span><input class="gridInputDefault no" type="text" placeholder="شماره صفحه"></span>
+            </div>
+            <div class="pagingRowNoPlace">
+                <select class="gridInputDefault rowNo">
+                    <option>۱۰</option>
+                    <option>۲۰</option>
+                    <option>۳۰</option>
+                    <option>۵۰</option>
+                </select>
+            </div>
+        </div>
+    </div> <!-- /gridCompFooter -->
+                                        
+</div> <!-- /gridCompBlock -->
+</div> <!-- /gridComp -->
+
+</div> <!-- /wrap -->
+
+</body>
+</html>

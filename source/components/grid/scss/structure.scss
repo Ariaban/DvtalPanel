@@ -1,0 +1,45 @@
+/* UI/UX: RohanIT.ir */
+/* طراحی رابط و تجربه کاربری فن آوری اطلاعات روهان */
+/* Grid Component */
+@charset "utf-8";
+@import "compass/reset";
+@import "compass/utilities";
+@import "../../../../source/scss/fonts";
+@import "../../../../source/scss/colors";
+@import "compass/css3";
+
+
+
+
+html {
+	font-size: $fontSize;
+	direction: rtl;
+}
+body {
+	width: 100%;
+	height: auto;
+	color: $fontColor1;
+	background-color: transparent;
+	background-image: inherit;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-attachment: fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+//	font: 0.625em/1em $fontApp;
+    font: 1em/1em $fontApp;
+	font-weight: normal;
+	line-height: 1.75 !important;
+	letter-spacing: 0;
+	margin: 0;
+	padding: 0;
+	overflow-x: hidden;
+	overflow-y: auto;
+}
+
+
+
+
+
